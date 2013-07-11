@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Failed to load libGL.so in android"
+date: 2013-07-11 16:27
+comments: true
+categories: 
+---
+Getting error while launchin AVD!!
+{% codeblock %}
+[2012-07-11 04:15:17 -Emulator] error libGL.so: cannot open shared object file: No such file or directory
+[2012-07-11 04:15:17 -Emulator] Failed to load libGL.so
+{% endcodeblock %}  
+
+
+Try this command!
+
+{% codeblock %}
+sudo ln -s /usr/lib32/fglrx/libGL.so.1.2 /usr/lib/libGL.so
+{% endcodeblock %}
+
