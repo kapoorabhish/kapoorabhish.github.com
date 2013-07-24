@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Increasing Upload Size of PHPMyAdmin"
+date: 2013-07-24 13:32
+comments: true
+categories: 
+---
+Increasing file upload size of PHPMyAdmin is a very easy task.  
+Just open the file /etc/php5/apache2/php.ini
+{% codeblock %}
+$ sudo gedit /etc/php5/apache2/php.ini
+{% endcodeblock %}
+
+Search for "upload_max_size" and make it to the required upload limit.
+{% codeblock %}
+upload_max_size=20 M 		//here I make it to 20M
+{% endcodeblock %}
+
+Next search for "post_max_size" and make it to some size greater than "upload_max_size".
+{% codeblock %}
+post_max_size=25 M 		//here I make it to 25M
+{% endcodeblock %}
+
+
+Next you restart the apache server.
+{% codeblock %}
+$ sudo service apache2 restart
+{% endcodeblock %}
+
+And it's done.
+
