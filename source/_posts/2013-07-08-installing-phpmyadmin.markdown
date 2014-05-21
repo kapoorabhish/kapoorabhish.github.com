@@ -23,7 +23,7 @@ After completion of installation, you need to add 'phpmyadmin' to the apache con
 sudo gedit /etc/apache2/apache2.conf
 {% endcodeblock %}
 
-Add the line to apache config file.  
+Add the line to at the end of apache config file.  
 {% codeblock %}
 Include /etc/phpmyadmin/apache.conf
 {% endcodeblock %}

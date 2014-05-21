@@ -1,0 +1,85 @@
+---
+layout: post
+title: "Gotta problem with WI-FI on Lubuntu-10.04"
+date: 2014-05-08 21:04
+comments: true
+categories: 
+---
+I work on Lubuntu-10.04. Accidentally I removed the desktop panel two days back. In short I lost all the icons on the panel.<br>
+I added all the icons back (which I possibly could!).
+One big problem I faced is ,I was helpless, "How to turn on the WI-FI, since I could not find the icon for it."
+The only icon I could found was for Ethernet.<br>
+So here is the solution.<br>
+First I discovered that my wifi was not ON.
+I tested it with the command
+{% codeblock %}
+$ ifconfig
+{% endcodeblock %}
+
+The only ethernet interface was ON.<br>
+
+So after that I tried this command.
+{% codeblock %}
+$ sudo ifconfig wlan0 up
+{% endcodeblock %}
+
+And got the error.
+
+		SIOCSIFFLAGS: Operation not possible due to RF-kill
+
+
+Now, needed to pay attention to RF-kill.<br>
+First checked the status of Rf-kill managed devices.
+
+{% codeblock %}
+$ rfkill list
+{% endcodeblock %}
+
+Output.
+
+		0: hci0: Bluetooth
+			Soft blocked: no
+			Hard blocked: no
+		1: phy0: Wireless LAN
+			Soft blocked: yes
+			Hard blocked: no
+		2: tpacpi_bluetooth_sw: Bluetooth
+			Soft blocked: no
+			Hard blocked: no
+
+
+
+which says wi-fi is soft-blocked.<br>
+So solved this problem by
+{% codeblock %}
+$ sudo rfkill unblock wlan 
+{% endcodeblock %}
+
+now the output is
+
+		0: hci0: Bluetooth
+			Soft blocked: no
+			Hard blocked: no
+		1: phy0: Wireless LAN
+			Soft blocked: no
+			Hard blocked: no
+		2: tpacpi_bluetooth_sw: Bluetooth
+			Soft blocked: no
+			Hard blocked: no
+
+
+
+now, there was no error in ifconfig.
+{% codeblock %}
+$ sudo ifconfig wlan0 up
+{% endcodeblock %}
+
+now, it's time to know the network in range. So
+{% codeblock %}
+$ sudo iwlist wlan0 scanning
+{% endcodeblock %}
+
+Now time to add icon for wi-fi.<br>
+So, go to desktop panel settings and add "Manage Networks" plugin.  
+
+
