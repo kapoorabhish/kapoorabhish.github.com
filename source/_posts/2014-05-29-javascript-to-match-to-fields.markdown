@@ -49,12 +49,16 @@ var mail1=document.getElementById('email1');
 var mail2=document.getElementById('email2');
 var err=document.getElementById('error');
 
-if (mail1.value != mail2.value){
+if ((mail1.value != mail2.value)&&(mail1.value!="")&&(mail2.value!="")){
 
 	mail1.style.background="#FF7B7B";
 	mail2.style.background="#FF7B7B";
 	err.innerHTML="The email id's do not match"
 	return false;
+}
+if((mail1.value=="")&&(mail2.value==""))
+{
+//do nothing
 }
 else {
 	mail1.style.background="#A2FFA2";
