@@ -37,7 +37,7 @@ Enter your email again &nbsp;<input type="email" id="email2" onblur="checkEmail(
 </div>
 <br>
 
-
+Here is the source code for this.<br>
 {% codeblock %}
 <script type="text/javascript">
 function checkEmail() {

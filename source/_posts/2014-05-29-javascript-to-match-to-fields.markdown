@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Javascript to match to Fields"
+title: "Javascript to match two Fields"
 date: 2014-05-29 12:42
 comments: true
 categories: 
