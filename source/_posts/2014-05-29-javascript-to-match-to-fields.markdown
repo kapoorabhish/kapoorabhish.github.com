@@ -1,0 +1,73 @@
+---
+layout: post
+title: "Javascript to match to Fields"
+date: 2014-05-29 12:42
+comments: true
+categories: 
+---
+
+<script type="text/javascript">
+function checkEmail() {
+var mail1=document.getElementById('email1');
+var mail2=document.getElementById('email2');
+var err=document.getElementById('error');
+
+if (mail1.value != mail2.value){
+
+	mail1.style.background="#FF7B7B";
+	mail2.style.background="#FF7B7B";
+	err.innerHTML="The email id's do not match"
+	return false;
+}
+else {
+	mail1.style.background="#A2FFA2";
+	mail2.style.background="#A2FFA2";
+	err.innerHTML=""
+	return true;
+}
+}
+</script>
+Here i am going to show one example to match two fields using java script without using submit button.
+Here I will make use "onblur" event.
+<div>
+Enter your email &nbsp;<input type="email" id="email1" >
+<br>
+Enter your email again &nbsp;<input type="email" id="email2" onblur="checkEmail()" >
+<div id="error"></div>
+</div>
+<br>
+
+Here is the source code for this.<br>
+{% codeblock %}
+<script type="text/javascript">
+function checkEmail() {
+var mail1=document.getElementById('email1');
+var mail2=document.getElementById('email2');
+var err=document.getElementById('error');
+
+if (mail1.value != mail2.value){
+
+	mail1.style.background="#FF7B7B";
+	mail2.style.background="#FF7B7B";
+	err.innerHTML="The email id's do not match"
+	return false;
+}
+else {
+	mail1.style.background="#A2FFA2";
+	mail2.style.background="#A2FFA2";
+	err.innerHTML=""
+	return true;
+}
+}
+</script>
+Here i am going to show one example to match two fields using java script without using submit button.
+Here I will make use "onblur" event.
+<div>
+Enter your email &nbsp;<input type="email" id="email1" >
+<br>
+Enter your email again &nbsp;<input type="email" id="email2" onblur="checkEmail()" >
+<div id="error"></div>
+</div>
+<br>
+{% endcodeblock %}
+
