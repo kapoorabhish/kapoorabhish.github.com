@@ -19,7 +19,7 @@ if ((mail1.value != mail2.value)&&(mail1.value!="")&&(mail2.value!="")){
 	err.innerHTML="The email id's do not match"
 	return false;
 }
-if((mail1.value=="")&&(mail2.value==""))
+if((mail1.value=="")||(mail2.value==""))
 {
 //do nothing
 }
@@ -37,7 +37,7 @@ Here I will make use "onblur" event.
 Enter your email &nbsp;<input type="email" id="email1" >
 <br>
 Enter your email again &nbsp;<input type="email" id="email2" onblur="checkEmail()" >
-<div id="error"></div>
+<div id="error" style="color:#ff0000"></div>
 </div>
 <br>
 
@@ -56,7 +56,7 @@ if ((mail1.value != mail2.value)&&(mail1.value!="")&&(mail2.value!="")){
 	err.innerHTML="The email id's do not match"
 	return false;
 }
-if((mail1.value=="")&&(mail2.value==""))
+if((mail1.value=="")||(mail2.value==""))
 {
 //do nothing
 }
@@ -74,7 +74,7 @@ Here I will make use "onblur" event.
 Enter your email &nbsp;<input type="email" id="email1" >
 <br>
 Enter your email again &nbsp;<input type="email" id="email2" onblur="checkEmail()" >
-<div id="error"></div>
+<div id="error" style="color:#ff0000"></div>
 </div>
 <br>
 {% endcodeblock %}
