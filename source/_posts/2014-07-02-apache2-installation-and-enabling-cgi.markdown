@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Apache2 installation and enabling CGI on Ubuntu-12.04"
+date: 2014-07-02 17:10
+comments: true
+categories: 
+---
+Recently I required to use Python for dynamic web pages. So I was required to install Apache web server and enabling the Cgi in it.
+So here I am gonna explain the whole process.
+
+Firstly, we need to install Apache web server.
+{% codeblock %}
+$ sudo apt-get install apache2
+{% endcodeblock %}
+
+Next, we create a directory CGI where all python (or other CGI) scripts will reside.
+{% codeblock %}
+$ sudo mkdir /var/www/cgi-bin
+{% endcodeblock %}
+
+Next we tell Apache which directories it can execute in and how to handle files with .py extension. So type in
+{% codeblock %}
+$ sudo vi /etc/apache2/sites-available/default
+{% endcodeblock %}
+
+Look for the following lines in the opened files
+```ruby /etc/apache2/sites-available/default
+			ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+			<Directory "/usr/lib/cgi-bin/">
+				AllowOverride None
+				Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+				Order allow,deny
+				Allow from all
+			</Directory>
+
+```
+And replace those lines with these
+```ruby /etc/apache2/sites-available/default
+				ScriptAlias /cgi-bin/ /var/www/cgi-bin/
+				<Directory "/var/www/cgi-bin">
+					AllowOverride None
+					Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+					Order allow,deny
+					Allow from all
+					AddHandler cgi-script .py
+					AddHandler default-handler .html .htm
+				</Directory>
+```
+
+
+And now, restart the Apache.
+{% codeblock %}
+$ sudo service apache2 restart
+{% endcodeblock %}
