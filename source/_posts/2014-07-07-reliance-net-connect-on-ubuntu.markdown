@@ -21,6 +21,10 @@ Also install other packages required.
 $ sudo apt-get install libuniconf4.6 libwvstreams4.6-base libwvstreams4.6-extras wvdial
 {% endcodeblock %}
 
+Type in the following command to create wvdial.conf
+{% codeblock %}
+$ sudo wvdialconf /etc/wvdial.conf
+{% endcodeblock %}
 Next, open up the wvdial.conf file.
 {% codeblock %}
 $ sudo gedit /etc/wvdail.conf
