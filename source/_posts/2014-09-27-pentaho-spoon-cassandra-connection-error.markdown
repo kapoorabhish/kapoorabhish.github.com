@@ -1,0 +1,50 @@
+---
+layout: post
+title: "Pentaho Spoon Cassandra connection error"
+date: 2014-09-27 18:35
+comments: true
+categories: 
+---
+While doing ETL process using spoon I got the error like this.
+
+		An unexpected error occurred in Spoon:  
+		Could not initialize class org.apache.thrift.transport.TSocket
+		java.lang.NoClassDefFoundError: Could not initialize class org.apache.thrift.transport.TSocket
+		    at org.pentaho.cassandra.legacy.CassandraConnection.openConnection(CassandraConnection.java:234)
+		    at org.pentaho.cassandra.legacy.CassandraConnection.checkOpen(CassandraConnection.java:151)
+		    at org.pentaho.cassandra.legacy.CassandraConnection.setKeyspace(CassandraConnection.java:174)
+		    at org.pentaho.cassandra.legacy.LegacyKeyspace.setKeyspace(LegacyKeyspace.java:93)
+		    at org.pentaho.cassandra.legacy.CassandraConnection.getKeyspace(CassandraConnection.java:277)
+		    at org.pentaho.di.trans.steps.cassandrainput.CassandraInputDialog.popupSchemaInfo(CassandraInputDialog.java:926)
+		    at org.pentaho.di.trans.steps.cassandrainput.CassandraInputDialog$12.widgetSelected(CassandraInputDialog.java:518)
+		    at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)
+		    at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+		    at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+		    at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+		    at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+		    at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1227)
+		    at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:7368)
+		    at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:8673)
+		    at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:625)
+		    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		    at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		    at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		    at java.lang.reflect.Method.invoke(Unknown Source)
+		    at org.pentaho.commons.launcher.Launcher.main(Launcher.java:134)
+
+
+After surfing net for the solution I finally found the solution on <a href="http://stackoverflow.com/">stackoverflow</a>.
+And here is the solution provided by them.
+
+Just copy the jar files mentioned below
+
+			data-integration/lib/log4j-1.2.16.jar
+			data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-api-1.7.3.jar
+			data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar
+
+to
+
+			data-integration/plugins/pentaho-cassandra-plugin/lib/
+
+P.S. - Thanks to the community of <a href="http://stackoverflow.com/">stackoverflow</a>. 
+
