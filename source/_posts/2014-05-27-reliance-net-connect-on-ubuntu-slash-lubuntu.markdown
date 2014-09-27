@@ -3,7 +3,7 @@ layout: post
 title: "Reliance Net Connect on Lubuntu"
 date: 2014-05-27 22:32
 comments: true
-categories: 
+categories: Reliance-Net-Connect Lubuntu wvdial
 ---
 I just got a Reliance Net Connect from one of my friend and tried it to run on Lubuntu. The task was so easy. It took me to run just few commands.
 

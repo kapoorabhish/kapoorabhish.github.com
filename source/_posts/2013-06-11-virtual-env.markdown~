@@ -3,7 +3,7 @@ layout: post
 title: "Setting Virtual Environment in Linux"
 date: 2013-06-11 13:25
 comments: true
-categories: Python VirtualEnvironment
+categories: 
 ---
 To set up a Virtual Environment, you first need to install <b>"virtualenvwrapper"</b>.  
 {% codeblock %}

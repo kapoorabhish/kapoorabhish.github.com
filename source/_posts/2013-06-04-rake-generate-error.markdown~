@@ -3,7 +3,7 @@ layout: post
 title: "rake generate error"
 date: 2013-06-04 18:07
 comments: true
-categories: Rake Ruby Octopress
+categories: 
 ---
 "Error during rake generate"
 {% codeblock %}

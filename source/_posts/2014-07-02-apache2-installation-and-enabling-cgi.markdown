@@ -3,7 +3,7 @@ layout: post
 title: "Apache2 installation and enabling CGI on Ubuntu-12.04"
 date: 2014-07-02 17:10
 comments: true
-categories: 
+categories: apache2 CGI Ubuntu Python
 ---
 Recently I required to use Python for dynamic web pages. So I was required to install Apache web server and enabling the Cgi in it.
 So here I am gonna explain the whole process.

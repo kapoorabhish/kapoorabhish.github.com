@@ -3,7 +3,7 @@ layout: post
 title: "Removing LAMP"
 date: 2013-07-12 22:05
 comments: true
-categories: 
+categories: LAMP phpMyAdmin Linux Apache2 MySQL PHP
 ---
 To remove the LAMP stack you may try the following commands.  
 ``` ruby Remove LAMP  

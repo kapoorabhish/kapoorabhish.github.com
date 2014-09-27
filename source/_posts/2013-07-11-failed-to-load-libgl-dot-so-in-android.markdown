@@ -3,7 +3,7 @@ layout: post
 title: "Failed to load libGL.so in android"
 date: 2013-07-11 16:27
 comments: true
-categories: 
+categories: Android Emulator AVD
 ---
 Getting error while launchin AVD!!
 {% codeblock %}

@@ -3,7 +3,7 @@ layout: post
 title: "Pentaho Spoon Cassandra connection error"
 date: 2014-09-27 18:35
 comments: true
-categories: 
+categories: Pentaho Kettle Spoon Cassandra
 ---
 While doing ETL process using spoon I got the error like this.
 

@@ -3,7 +3,7 @@ layout: post
 title: "Google Chrome on Ubuntu-12.04"
 date: 2014-07-26 19:56
 comments: true
-categories: 
+categories: Google Chrome Ubuntu
 ---
 On linux(Ubuntu) you can install Chromium browser using apt-get, but to install __Chrome__ you need to run some commands to make it install using apt-get.<br>
 First, get a repository key and add it to your system.

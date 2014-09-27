@@ -3,7 +3,7 @@ layout: post
 title: "Populating Database using Python Script"
 date: 2013-06-26 21:42
 comments: true
-categories: 
+categories: Excel MySQL Python Database
 ---
 I am having an excel file which contains near about 11000 rows,from which I needed to populate my database, so I tried the following Python Script.
 

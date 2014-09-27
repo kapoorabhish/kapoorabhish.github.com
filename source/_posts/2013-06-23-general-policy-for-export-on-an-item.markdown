@@ -3,7 +3,7 @@ layout: post
 title: "General Policy for Export on an Item"
 date: 2013-06-23 11:34
 comments: true
-categories: 
+categories: Export Import Policy
 ---
 Generally the Export policy on an item is one of the following:  
 

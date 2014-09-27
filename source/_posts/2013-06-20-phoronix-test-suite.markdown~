@@ -3,7 +3,7 @@ layout: post
 title: "Phoronix Test Suite"
 date: 2013-06-20 13:02
 comments: true
-categories: Phoronix
+categories: 
 ---
 I got a task to test a server which we made and named it <b>Ant</b>.It has <b>Centos 6</b> installed on it.  
 As suggested I made use of <b>Phoronix Test Suite</b>.  

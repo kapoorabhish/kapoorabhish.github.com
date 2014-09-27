@@ -3,7 +3,7 @@ layout: post
 title: "Installing phpMyAdmin"
 date: 2013-07-08 22:29
 comments: true
-categories: 
+categories: phpMyAdmin Apache2 Ubuntu
 ---
 Here I am going to post some steps in order to install phpMyAdmin.  
 {% codeblock %}

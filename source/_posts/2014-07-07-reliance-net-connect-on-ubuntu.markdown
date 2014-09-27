@@ -3,7 +3,7 @@ layout: post
 title: "Reliance Net Connect on Ubuntu-12.04"
 date: 2014-07-07 21:29
 comments: true
-categories: 
+categories: Reliance-Net-Connect Ubuntu wvdial
 ---
 After surfing so many posts on Internet about installing and running Reliance Net Connect on Ubuntu, finally I was successful.
 I have HUAWEI (model no. HUAWEI EC1262).
@@ -27,7 +27,7 @@ $ sudo wvdialconf /etc/wvdial.conf
 {% endcodeblock %}
 Next, open up the wvdial.conf file.
 {% codeblock %}
-$ sudo gedit /etc/wvdail.conf
+$ sudo gedit /etc/wvdial.conf
 {% endcodeblock %}
 
 Here, are the contents of file. Some of the lines may differ, if line missing from mentioned below add them.
@@ -54,3 +54,5 @@ I hope your connection will be successful, and the output will be like this.
 {% img center "{{ root_url }} /images/terminal.png" %}
 
 Note: Keep the terminal window open till you want to use internet. When you want to close connection, press <b>ctrl+c</b>.
+
+P.S. If it does not work then give a try to other way <a href="http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu/">here</a>.

@@ -3,7 +3,7 @@ layout: post
 title: "Removing Special Characters &amp; Populating Database using Python"
 date: 2013-07-05 21:59
 comments: true
-categories: 
+categories: Python MySQL Database Excel
 ---
 <table>
 <th>State Name</th>
