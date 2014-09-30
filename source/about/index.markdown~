@@ -10,4 +10,4 @@ Abhishek Kapoor
 M.Sc.Informatics  
 Instititue of Informatics & Communication, UDSC  
 e-mail: abhishek [dot] kapoor [at] outlook [dot] com  
-LinkedIn: in.linkedin.com/pub/abhishek-kapoor/95/b92/4b7/  
+LinkedIn: <a href='in.linkedin.com/pub/abhishek-kapoor/95/b92/4b7/' target='_blank'>in.linkedin.com/pub/abhishek-kapoor/95/b92/4b7/</a>
