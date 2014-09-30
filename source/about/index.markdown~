@@ -2,11 +2,12 @@
 layout: page
 title: "about me"
 date: 2013-06-23 12:17
-comments: true
-sharing: true
+comments: false
+sharing: false
 footer: true
 ---
 Abhishek Kapoor  
 M.Sc.Informatics  
 Instititue of Informatics & Communication, UDSC  
-e-mail: abhishek [dot] kapoor [at] iic [dot] ac [dot] in
+e-mail: abhishek [dot] kapoor [at] outlook [dot] com  
+LinkedIn: in.linkedin.com/pub/abhishek-kapoor/95/b92/4b7/  
