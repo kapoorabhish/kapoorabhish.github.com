@@ -3,7 +3,7 @@ layout: page
 title: ""
 date: 2014-10-12 22:00
 comments: false
-sharing: false
+sharing: true
 footer: true
 ---
 
