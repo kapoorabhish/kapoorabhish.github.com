@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Resume"
+layout: page
+title: ""
 date: 2014-10-12 22:00
 comments: false
-categories: 
+sharing: false
+footer: true
 ---
 
 <iframe src="http://docs.google.com/gview?
