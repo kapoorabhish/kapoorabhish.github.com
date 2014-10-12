@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
+title: "Resume"
 date: 2014-10-12 22:00
 comments: false
 sharing: true
