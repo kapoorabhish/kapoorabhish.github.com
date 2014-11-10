@@ -12,7 +12,7 @@ $ sudo apt-get install mozplugger
 {% endcodeblock %}  
 
 
-Next, open thwe file /etc/mozpluggerrc as a superuser.
+Next, open the file /etc/mozpluggerrc as a superuser.
 {% codeblock %}
 $ sudo gedit /etc/mozpluggerrc
 {% endcodeblock %}  

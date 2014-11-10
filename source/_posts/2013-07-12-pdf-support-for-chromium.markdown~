@@ -3,7 +3,7 @@ layout: post
 title: "pdf support for Chromium"
 date: 2013-07-12 22:12
 comments: true
-categories: Chromium PDF
+categories: Chromium PDF Acroread
 ---
 I didn't have pdf format support in my Chromium Browser. So I tried the following commands for it.   
 {% codeblock %}
