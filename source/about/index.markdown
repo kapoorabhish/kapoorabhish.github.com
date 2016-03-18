@@ -7,6 +7,7 @@ sharing: false
 footer: true
 ---
 Abhishek Kapoor  
+Software Engineer at <a href="http://juxt-smartmandate.com/">Juxt Smart Mandate</a>  
 M.Sc.Informatics  
 Instititue of Informatics & Communication, UDSC  
 e-mail: abhishek [dot] kapoor [at] outlook [dot] com  
