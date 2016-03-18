@@ -6,7 +6,7 @@ comments: false
 sharing: false
 footer: true
 ---
-{% img "{{ root_url }}/images/Abhi.png" %}
+{% img "{{ root_url }} /images/Abhi.jpg" %}
 Abhishek Kapoor  
 Software Engineer at <a href="http://juxt-smartmandate.com/">Juxt Smart Mandate</a>  
 M.Sc.Informatics  
