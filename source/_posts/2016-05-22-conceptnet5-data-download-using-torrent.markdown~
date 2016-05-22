@@ -3,7 +3,7 @@ layout: post
 title: "ConceptNet5 Data download using Torrent"
 date: 2016-05-22 17:09
 comments: true
-categories: ConceptNet ConceptNet5 Machine-Learning
+categories: ['ConceptNet', 'ConceptNet5' ,'Machine Learning']
 ---
 ### **ConceptNet**
 <a href='http://conceptnet5.media.mit.edu/' target="_blank">ConceptNet</a> is a semantic network containing lots of things computers should know about the world, especially when understanding text written by people.  
