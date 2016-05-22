@@ -16,14 +16,14 @@ If you want all the data in ConceptNet for your application, you can have it fro
 As you can see the data file are so big that one may have hardships downloading these if Internet bandwidth is not so good.
 Below are the links of torrents for each file.
 
-*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_db_5.4.torrent">conceptnet5_db_5.4.torrent</a>.
+*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_db_5.4.torrent?raw=true">conceptnet5_db_5.4.torrent</a>.
 
-*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_flat_csv_5.4.torrent">conceptnet5_flat_csv_5.4.torrent</a>.
+*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_flat_csv_5.4.torrent?raw=true">conceptnet5_flat_csv_5.4.torrent</a>.
 
-*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_flat_json_5.4.torrent">conceptnet5_flat_json_5.4.torrent</a>.
+*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_flat_json_5.4.torrent?raw=true">conceptnet5_flat_json_5.4.torrent</a>.
 
-*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_flat_msgpack_5.4.torrent">conceptnet5_flat_msgpack_5.4.torrent</a>.
+*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_flat_msgpack_5.4.torrent?raw=true">conceptnet5_flat_msgpack_5.4.torrent</a>.
 
-*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_raw_data_5.4.torrent">conceptnet5_raw_data_5.4.torrent</a>.
+*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_raw_data_5.4.torrent?raw=true">conceptnet5_raw_data_5.4.torrent</a>.
 
-*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_vector_space_5.4.torrent">conceptnet5_vector_space_5.4.torrent</a>.
+*   <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_vector_space_5.4.torrent?raw=true">conceptnet5_vector_space_5.4.torrent</a>.
