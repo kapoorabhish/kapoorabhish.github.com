@@ -8,6 +8,6 @@ footer: true
 ---
 
 <iframe src="http://docs.google.com/gview?
-url=https://github.com/kapoorabhish/resume/blob/master/Abhishek_Resume.pdf?raw=true&embedded=true" style="width:1000px;
+url=https://github.com/kapoorabhish/resume/blob/master/Abhishek_resume.pdf?raw=true&embedded=true" style="width:1000px;
 height:700px;margin : 0 auto; display : block;" frameborder="0"></iframe>
 
