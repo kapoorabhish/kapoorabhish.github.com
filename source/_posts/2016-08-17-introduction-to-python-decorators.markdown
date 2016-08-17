@@ -5,8 +5,8 @@ date: 2016-08-17 21:29
 comments: true
 categories: ["Python","Python Decorators","Decorators"]
 ---
-Here is the presentation which I created recently.
-{% 2bc365ea5d8e4526a5391d9633dbc904 %}
+Here is the presentation which I created recently on Python Decorators.
+{% speakerdeck 2bc365ea5d8e4526a5391d9633dbc904 %}
 
 ###References:
  * http://www.artima.com/weblogs/viewpost.jsp?thread=240808
