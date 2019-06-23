@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: machine learning | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/machine-learning/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ConceptNet5 Data download using Torrent]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent/"/>
+    <updated>2016-05-22T17:09:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent</id>
+    <content type="html"><![CDATA[<h3><strong>ConceptNet</strong></h3>
+
+<p><a href='http://conceptnet5.media.mit.edu/' target="_blank">ConceptNet</a> is a semantic network containing lots of things computers should know about the world, especially when understanding text written by people.<br/>
+It is built from nodes representing words or short phrases of natural language, and labeled relationships between them. (We call the nodes &ldquo;concepts&rdquo; for tradition, but they&rsquo;d be better known as &ldquo;terms&rdquo;.) These are the kinds of relationships computers need to know to search for information better, answer questions, and understand people&rsquo;s goals. [<a href='http://conceptnet5.media.mit.edu/'>source</a>]</p>
+
+<h3><strong>Downloading ConceptNet5 Data</strong></h3>
+
+<p>If you want all the data in ConceptNet for your application, you can have it from <a href='http://conceptnet5.media.mit.edu/downloads'>here</a></p>
+
+<h3><strong>Downloading ConceptNet5 Using Torrent</strong></h3>
+
+<p>As you can see the data file are so big that one may have hardships downloading these if Internet bandwidth is not so good.
+Below are the links of torrents for each file.</p>
+
+<ul>
+<li><p><a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_db_5.4.torrent?raw=true">conceptnet5_db_5.4.torrent</a>.</p></li>
+<li><p><a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_flat_csv_5.4.torrent?raw=true">conceptnet5_flat_csv_5.4.torrent</a>.</p></li>
+<li><p><a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_flat_json_5.4.torrent?raw=true">conceptnet5_flat_json_5.4.torrent</a>.</p></li>
+<li><p><a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_flat_msgpack_5.4.torrent?raw=true">conceptnet5_flat_msgpack_5.4.torrent</a>.</p></li>
+<li><p><a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_raw_data_5.4.torrent?raw=true">conceptnet5_raw_data_5.4.torrent</a>.</p></li>
+<li><p><a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/conceptnet5_torrents/conceptnet5_vector_space_5.4.torrent?raw=true">conceptnet5_vector_space_5.4.torrent</a>.</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: date | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/date/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Playing with Date in Pentaho Spoon]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon/"/>
+    <updated>2014-09-27T19:10:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon</id>
+    <content type="html"><![CDATA[<p>I got the date in which there was a date field in form <strong>dd/mm/yy</strong> and I needed to convert into the format of <strong>dd/mm/yyyy</strong>.<br/>
+Oops!!! How to specify the year 2000 in the date, coz in the date format meta data i can change format to dd/mm/yyyy but can&rsquo;t specify the year number.<br/>
+Then, something hit into my mind and I specified the format as <strong>dd/mm/20yy</strong> and Bingo!!!</p>
+
+<p>The sample transformation can be downloaded <a href="https://github.com/kapoorabhish/kapoorabhish.github.com/blob/source/source/kettle_transformation/playing_with_date.ktr.zip?raw=true"><strong>here</strong></a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

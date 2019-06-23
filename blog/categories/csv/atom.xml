@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: csv | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/csv/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Sorting a CSV file using Python]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python/"/>
+    <updated>2013-07-26T18:16:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python</id>
+    <content type="html"><![CDATA[<p>Today ,just got the the task to sort a CSV file. I tried it using Python and completed the task.<br/>
+So here is my python script.</p>
+
+<pre><code class="ruby sort.py">            import sys, csv ,operator
+            data = csv.reader(open('File.csv'),delimiter=',')
+            sortedlist = sorted(data, key=operator.itemgetter(0))   # 0 specifies according to first column we want to sort
+            #now write the sorte result into new CSV file
+            with open("NewFile.csv", "wb") as f:
+                fileWriter = csv.writer(f, delimiter=',')
+                for row in sortedlist:
+                    fileWriter.writerow(row)
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

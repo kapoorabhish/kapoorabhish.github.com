@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: export | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/export/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[General Policy for Export on an Item]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/06/23/general-policy-for-export-on-an-item/"/>
+    <updated>2013-06-23T11:34:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/06/23/general-policy-for-export-on-an-item</id>
+    <content type="html"><![CDATA[<p>Generally the Export policy on an item is one of the following:</p>
+
+<ul>
+<li><p><strong>Prohibited</strong> - Not permitted for Export. Licence will not be given in the normal course.</p></li>
+<li><p><strong>Restricted</strong> - Export is permitted under a licence granted by DGFT.</p></li>
+<li><p><strong>STE</strong> - Export allowed only through specified State Trading Enterprises subject to specific(STEs) conditions laid out in the FTP and also PARA 2.11 of the Import and Export Policy.</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

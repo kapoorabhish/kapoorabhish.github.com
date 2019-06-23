@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: shell-script | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/shell-script/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Accesing text file using Shell Script.]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/06/14/accesing-csv-file-using-shell-script/"/>
+    <updated>2013-06-14T08:19:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/06/14/accesing-csv-file-using-shell-script</id>
+    <content type="html"><![CDATA[<p>Given a text file in which there are links of file to be dowloaded (one link per line), here I am posting a shell script to achieve the task.</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>myfilename=/home/abhishek/Desktop/ideas.txt     #here path to txt file has been stored in $myfilename
+</span><span class='line'>    while read line
+</span><span class='line'>    do
+</span><span class='line'>        curl &ndash;remote-name $line&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>done        &lt;$myfilename
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></p>
+
+<p>The above shell script reads the ideas.txt file line by line and download all the files in the current directory.</p>
+]]></content>
+  </entry>
+  
+</feed>

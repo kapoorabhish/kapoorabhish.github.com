@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: lamp | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/lamp/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Removing LAMP]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/07/12/removing-lamp/"/>
+    <updated>2013-07-12T22:05:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/07/12/removing-lamp</id>
+    <content type="html"><![CDATA[<p>To remove the LAMP stack you may try the following commands.<br/>
+<code>ruby Remove LAMP  
+            $ sudo apt-get purge libapache2-mod-auth-mysql phpmyadmin
+            $ sudo apt-get purge mysql-server mysql-server-5.1 mysql-server-core-5.1
+            $ sudo apt-get purge apache2 apache2-mpm-prefork apache2-utils apache2.2-bin apache2.2-common libapache2-mod-php5
+            $ sudo apt-get autoremove
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

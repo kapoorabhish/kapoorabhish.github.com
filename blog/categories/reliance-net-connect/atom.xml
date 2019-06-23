@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: reliance-net-connect | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/reliance-net-connect/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Reliance Net Connect on Ubuntu-12.04]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu/"/>
+    <updated>2014-07-07T21:29:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu</id>
+    <content type="html"><![CDATA[<p>After surfing so many posts on Internet about installing and running Reliance Net Connect on Ubuntu, finally I was successful.
+I have HUAWEI (model no. HUAWEI EC1262).</p>
+
+<p>So, here I am going to explain step by step configuration.</p>
+
+<p>First, install Wvdial.
+(You may temporarily use wifi connection for all these, so that you need not to download these on separate machine or if you like you can.)
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get install wvdial</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Also install other packages required.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get install libuniconf4.6 libwvstreams4.6-base libwvstreams4.6-extras wvdial</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Type in the following command to create wvdial.conf
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo wvdialconf /etc/wvdial.conf</span></code></pre></td></tr></table></div></figure>
+Next, open up the wvdial.conf file.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gedit /etc/wvdial.conf</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Here, are the contents of file. Some of the lines may differ, if line missing from mentioned below add them.
+<code>ruby /etc/wvdail.conf
+            [Dialer Defaults]
+            Init1 = ATZ
+            Init2 = ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0
+            Modem Type = Analog Modem
+            ISDN = 0
+            New PPPD = yes
+            Baud = 9600
+            Modem = /dev/ttyUSB0
+            Username = "Add reliance netconnect phone number here with out quotes"
+            Password = "Add reliance netconnect phone number here with out quotes"
+            Phone = #777
+            Stupid Mode = 1
+</code>
+At last, open up the terminal give the following command
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo wvdial</span></code></pre></td></tr></table></div></figure></p>
+
+<p>I hope your connection will be successful, and the output will be like this.
+<img class="center &ldquo;{{ root_url }}" src="/images/terminal.png&rdquo;"></p>
+
+<p>Note: Keep the terminal window open till you want to use internet. When you want to close connection, press <b>ctrl+c</b>.</p>
+
+<p>P.S. If it does not work then give a try to other way <a href="http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu/">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Reliance Net Connect on Lubuntu]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu/"/>
+    <updated>2014-05-27T22:32:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu</id>
+    <content type="html"><![CDATA[<p>I just got a Reliance Net Connect from one of my friend and tried it to run on Lubuntu. The task was so easy. It took me to run just few commands.</p>
+
+<p>You need to install two software packages to make the internet connectivity work. They are wvdial and gnome-ppp (The front-end tool to configure wvdial).</p>
+
+<p>1.Installation of &ldquo;wvdial&rdquo;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install wvdial</span></code></pre></td></tr></table></div></figure></p>
+
+<p>2.Install gnome-ppp
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install gnome-ppp</span></code></pre></td></tr></table></div></figure></p>
+
+<p>3.Open gnome-ppp from the terminal.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gnome-ppp</span></code></pre></td></tr></table></div></figure></p>
+
+<p>4.You have to enter your reliance 10-digit mobile number in the Username &amp; your password. Select #777 if you are a Reliance Netconnect Broadband+ user. Then press the Setup button below.</p>
+
+<p>5.In the Setup window below, click the “Detect” button to identify the device ID of the USB port in which you have inserted your USB modem. The tool would automatically detect the Device, Type and Speed of your USB modem. Once it has deteced, please the “Close” button below.</p>
+
+<p>Once this is done click on Connect!!!
+<br>
+<br></p>
+
+<h6>Source-askubuntu.com</h6>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

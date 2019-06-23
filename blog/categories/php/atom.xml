@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: php | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Increasing Upload Size of PHPMyAdmin]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/07/24/increasing-upload-size-of-phpmyadmin/"/>
+    <updated>2013-07-24T13:32:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/07/24/increasing-upload-size-of-phpmyadmin</id>
+    <content type="html"><![CDATA[<p>Increasing file upload size of PHPMyAdmin is a very easy task.<br/>
+Just open the file /etc/php5/apache2/php.ini
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gedit /etc/php5/apache2/php.ini</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Search for &ldquo;upload_max_size&rdquo; and make it to the required upload limit.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>upload_max_size=20 M        //here I make it to 20M</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Next search for &ldquo;post_max_size&rdquo; and make it to some size greater than &ldquo;upload_max_size&rdquo;.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>post_max_size=25 M      //here I make it to 25M</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Next you restart the apache server.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo service apache2 restart</span></code></pre></td></tr></table></div></figure></p>
+
+<p>And it&rsquo;s done.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Removing LAMP]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/07/12/removing-lamp/"/>
+    <updated>2013-07-12T22:05:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/07/12/removing-lamp</id>
+    <content type="html"><![CDATA[<p>To remove the LAMP stack you may try the following commands.<br/>
+<code>ruby Remove LAMP  
+            $ sudo apt-get purge libapache2-mod-auth-mysql phpmyadmin
+            $ sudo apt-get purge mysql-server mysql-server-5.1 mysql-server-core-5.1
+            $ sudo apt-get purge apache2 apache2-mpm-prefork apache2-utils apache2.2-bin apache2.2-common libapache2-mod-php5
+            $ sudo apt-get autoremove
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

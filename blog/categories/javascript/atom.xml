@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: javascript | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript to match two Fields]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/05/29/javascript-to-match-to-fields/"/>
+    <updated>2014-05-29T12:42:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/05/29/javascript-to-match-to-fields</id>
+    <content type="html"><![CDATA[<script type="text/javascript">
+function checkEmail() {
+var mail1=document.getElementById('email1');
+var mail2=document.getElementById('email2');
+var err=document.getElementById('error');
+
+if ((mail1.value != mail2.value)&&(mail1.value!="")&&(mail2.value!="")){
+
+    mail1.style.background="#FF7B7B";
+    mail2.style.background="#FF7B7B";
+    err.innerHTML="The email id's do not match"
+    return false;
+}
+if((mail1.value=="")||(mail2.value==""))
+{
+//do nothing
+}
+else {
+    mail1.style.background="#A2FFA2";
+    mail2.style.background="#A2FFA2";
+    err.innerHTML=""
+    return true;
+}
+}
+</script>
+
+
+<p>Here i am going to show one example to match two fields using java script without using submit button.
+Here I will make use &ldquo;onblur&rdquo; event.</p>
+
+<div>
+Enter your email &nbsp;<input type="email" id="email1" >
+<br>
+Enter your email again &nbsp;<input type="email" id="email2" onblur="checkEmail()" >
+<div id="error" style="color:#ff0000"></div>
+</div>
+
+
+<p><br></p>
+
+<p>Here is the source code for this.<br>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;script type="text/javascript">
+</span><span class='line'>function checkEmail() {
+</span><span class='line'>var mail1=document.getElementById('email1');
+</span><span class='line'>var mail2=document.getElementById('email2');
+</span><span class='line'>var err=document.getElementById('error');
+</span><span class='line'>
+</span><span class='line'>if ((mail1.value != mail2.value)&&(mail1.value!="")&&(mail2.value!="")){
+</span><span class='line'>
+</span><span class='line'>    mail1.style.background="#FF7B7B";
+</span><span class='line'>    mail2.style.background="#FF7B7B";
+</span><span class='line'>    err.innerHTML="The email id's do not match"
+</span><span class='line'>    return false;
+</span><span class='line'>}
+</span><span class='line'>if((mail1.value=="")||(mail2.value==""))
+</span><span class='line'>{
+</span><span class='line'>//do nothing
+</span><span class='line'>}
+</span><span class='line'>else {
+</span><span class='line'>    mail1.style.background="#A2FFA2";
+</span><span class='line'>    mail2.style.background="#A2FFA2";
+</span><span class='line'>    err.innerHTML=""
+</span><span class='line'>    return true;
+</span><span class='line'>}
+</span><span class='line'>}
+</span><span class='line'>&lt;/script>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Here i am going to show one example to match two fields using java script without using submit button.
+</span><span class='line'>Here I will make use &ldquo;onblur&rdquo; event.&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;div>
+</span><span class='line'>Enter your email &nbsp;&lt;input type="email" id="email1" >
+</span><span class='line'>&lt;br>
+</span><span class='line'>Enter your email again &nbsp;&lt;input type="email" id="email2" onblur="checkEmail()" >
+</span><span class='line'>&lt;div id="error" style="color:#ff0000">&lt;/div>
+</span><span class='line'>&lt;/div>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p>&lt;br></span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+</feed>

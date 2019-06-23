@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: python decorators | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/python-decorators/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Introduction to Python Decorators]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators/"/>
+    <updated>2016-08-17T21:29:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators</id>
+    <content type="html"><![CDATA[<p>Here is the presentation which I created recently on Python Decorators.
+<script async="true" class="speakerdeck-embed" data-id="2bc365ea5d8e4526a5391d9633dbc904" src="//speakerdeck.com/assets/embed.js"> </script></p>
+
+<h3>References:</h3>
+
+<ul>
+<li><p><a href="http://www.artima.com/weblogs/viewpost.jsp?thread=240808">http://www.artima.com/weblogs/viewpost.jsp?thread=240808</a></p></li>
+<li><p><a href="http://thecodeship.com/patterns/guide-to-python-function-decorators/">http://thecodeship.com/patterns/guide-to-python-function-decorators/</a></p></li>
+<li><p><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/</a></p></li>
+<li><p><a href="http://scottlobdell.me/2015/04/decorators-arguments-python/">http://scottlobdell.me/2015/04/decorators-arguments-python/</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

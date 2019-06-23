@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: python | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/python/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Introduction to Python Decorators]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators/"/>
+    <updated>2016-08-17T21:29:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators</id>
+    <content type="html"><![CDATA[<p>Here is the presentation which I created recently on Python Decorators.
+<script async="true" class="speakerdeck-embed" data-id="2bc365ea5d8e4526a5391d9633dbc904" src="//speakerdeck.com/assets/embed.js"> </script></p>
+
+<h3>References:</h3>
+
+<ul>
+<li><p><a href="http://www.artima.com/weblogs/viewpost.jsp?thread=240808">http://www.artima.com/weblogs/viewpost.jsp?thread=240808</a></p></li>
+<li><p><a href="http://thecodeship.com/patterns/guide-to-python-function-decorators/">http://thecodeship.com/patterns/guide-to-python-function-decorators/</a></p></li>
+<li><p><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/</a></p></li>
+<li><p><a href="http://scottlobdell.me/2015/04/decorators-arguments-python/">http://scottlobdell.me/2015/04/decorators-arguments-python/</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Apache Solr Cursor in Python]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python/"/>
+    <updated>2016-03-18T21:40:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python</id>
+    <content type="html"><![CDATA[<p>For some time I have been using <a href="http://lucene.apache.org/solr/">Apache Solr</a> for fast querying and faceting.<br/>
+Once I needed to take the dump of whole data from solr. So I implemented a function which works as python generator and gives you the dump of data from your solr collection.<br/>
+Below is the function.</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def get_cursor_from_solr_using_cursor_mark(solr_query,timeout=5,num_rows=None,cursor_mark=&ldquo;&lt;em>&rdquo;,num_rows_in_one_shot=10,unique_field_name=&ldquo;id&rdquo;):
+</span><span class='line'>    &ldquo;&rdquo;&ldquo;
+</span><span class='line'>    The function imitates a cursor for bringing data from solr.
+</span><span class='line'>    num_rows is how many row one wants from solr. pass it None if all rows needed.
+</span><span class='line'>    cursor_mark is cursorMark query parameter of solr,
+</span><span class='line'>    num_rows_in_one_shot is kind of tuning factor for querying again and again until required number of rows are returned.
+</span><span class='line'>    &lt;/em>&lt;strong> solr query must not include rows and start parameters .&lt;/strong>*
+</span><span class='line'>    &rdquo;&ldquo;&rdquo;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>if num_rows is None:    #when all the rows are required
+</span><span class='line'>    fetch_more=True
+</span><span class='line'>    while fetch_more is True:
+</span><span class='line'>        num_rows_part="&amp;rows="+str(num_rows_in_one_shot)+"&amp;sort="+str(unique_field_name)+"+asc&amp;cursorMark="+str(cursor_mark)+"&amp;timeAllowed=-1"
+</span><span class='line'>        r=requests.get(solr_query+num_rows_part,timeout=timeout)
+</span><span class='line'>        solr_dict=r.json()
+</span><span class='line'>        num_docs=len(solr_dict['response']['docs'])
+</span><span class='line'>        cursor_mark=solr_dict.get('nextCursorMark')
+</span><span class='line'>
+</span><span class='line'>        if num_docs==0 or cursor_mark is None:
+</span><span class='line'>            fetch_more=False
+</span><span class='line'>        for each_dict in solr_dict['response']['docs']:
+</span><span class='line'>            yield (each_dict,cursor_mark)
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>else:   #when given number of rows are required
+</span><span class='line'>    for i in xrange(int(math.ceil(num_rows/float(num_rows_in_one_shot)))):
+</span><span class='line'>        fetch_more=True
+</span><span class='line'>        if fetch_more is True:
+</span><span class='line'>            q,r=divmod(num_rows,(i+1)*num_rows_in_one_shot)
+</span><span class='line'>
+</span><span class='line'>            if q==0 and r==0:
+</span><span class='line'>                break
+</span><span class='line'>            if q==0:
+</span><span class='line'>                rows=r-(i)*num_rows_in_one_shot
+</span><span class='line'>
+</span><span class='line'>            else:
+</span><span class='line'>                rows=num_rows_in_one_shot
+</span><span class='line'>
+</span><span class='line'>            num_rows_part="&amp;rows="+str(rows)+"&amp;sort="+str(unique_field_name)+"+asc&amp;cursorMark="+str(cursor_mark)+"&amp;timeAllowed=-1"
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>            r=requests.get(solr_query+num_rows_part,timeout=timeout)
+</span><span class='line'>
+</span><span class='line'>            solr_dict=r.json()
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>            num_docs=len(solr_dict['response']['docs'])
+</span><span class='line'>            cursor_mark=solr_dict.get('nextCursorMark')
+</span><span class='line'>
+</span><span class='line'>            if num_docs==0 or cursor_mark is None:
+</span><span class='line'>                fetch_more=False
+</span><span class='line'>
+</span><span class='line'>            for each_dict in solr_dict['response']['docs']:
+</span><span class='line'>                yield each_dict
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Usage of function:<br/>
+    >>>source_solr_ip=&ldquo;127.0.0.1&rdquo;
+    >>>source_solr_port=8983
+    >>>collection_name=&ldquo;test&rdquo;
+    >>>query=&ldquo;<a href="http://">http://</a>&rdquo;+source_solr_ip+&ldquo;:&rdquo;+str(source_solr_port)+&ldquo;/&rdquo;+&ldquo;solr/&rdquo;+collection_name+&ldquo;/select?q=&rdquo;+&ldquo;<em>:</em>&rdquo;+&ldquo;&amp;wt=json&rdquo;
+    >>>solr_dump_gen=get_cursor_from_solr_using_cursor_mark(query)
+    >>>for each in solr_dump_gen:
+    &hellip;.    print each</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Apache2 installation and enabling CGI on Ubuntu-12.04]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
+    <updated>2014-07-02T17:10:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
+    <content type="html"><![CDATA[<p>Recently I required to use Python for dynamic web pages. So I was required to install Apache web server and enabling the Cgi in it.
+So here I am gonna explain the whole process.</p>
+
+<p>Firstly, we need to install Apache web server.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get install apache2</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Next, we create a directory CGI where all python (or other CGI) scripts will reside.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo mkdir /var/www/cgi-bin</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Next we tell Apache which directories it can execute in and how to handle files with .py extension. So type in
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo vi /etc/apache2/sites-available/default</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Look for the following lines in the opened files
+```ruby /etc/apache2/sites-available/default
+            ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+            <Directory "/usr/lib/cgi-bin/">
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+            </Directory></p>
+
+<pre><code>And replace those lines with these
+</code></pre>
+
+<pre><code>            ScriptAlias /cgi-bin/ /var/www/cgi-bin/
+            &lt;Directory "/var/www/cgi-bin"&gt;
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+                AddHandler cgi-script .py
+                AddHandler default-handler .html .htm
+            &lt;/Directory&gt;
+</code></pre>
+
+<p>```</p>
+
+<p>And now, restart the Apache.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo service apache2 restart</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sorting a CSV file using Python]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python/"/>
+    <updated>2013-07-26T18:16:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python</id>
+    <content type="html"><![CDATA[<p>Today ,just got the the task to sort a CSV file. I tried it using Python and completed the task.<br/>
+So here is my python script.</p>
+
+<pre><code class="ruby sort.py">            import sys, csv ,operator
+            data = csv.reader(open('File.csv'),delimiter=',')
+            sortedlist = sorted(data, key=operator.itemgetter(0))   # 0 specifies according to first column we want to sort
+            #now write the sorte result into new CSV file
+            with open("NewFile.csv", "wb") as f:
+                fileWriter = csv.writer(f, delimiter=',')
+                for row in sortedlist:
+                    fileWriter.writerow(row)
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Removing Special Characters &amp; Populating Database using Python]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python/"/>
+    <updated>2013-07-05T21:59:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python</id>
+    <content type="html"><![CDATA[<table>
+<th>State Name</th>
+<th>Village Name</th>
+<th>Habitation Name</th>
+<tr>
+<td>ANDHRA PRADESH    &nbsp;</td>
+<td>J.K.GUMADA(001 )    &nbsp;</td>
+<td>J.K.GUMADA (0101302001010100)</td>
+</tr>
+<tr>
+<td>ANDHRA PRADESH    &nbsp;</td>
+<td>V.V.R.PETA(002 )    &nbsp;</td>
+<td>V.V.R.PETA(0101302002010100)</td>
+</tr>
+</table>
+
+
+<p></p>
+
+<p>If a table as shown above is there which contains some text, numbers and some special characters and we need to populate our database after removing all the numbers and special characters.<br/>
+Here I am posting a Python script to complete the task.</p>
+
+<pre><code class="ruby populatedata.py">    import xlrd
+    import MySQLdb
+    import re
+
+    # Open the workbook and define the worksheet
+    book= xlrd.open_workbook("testdata1.xls")
+    sheet = book.sheet_by_name("testdata1")
+
+    # Establish a MySQL connection
+    database = MySQLdb.connect (host="localhost", user = "username", passwd = "password", db = "database_name")
+
+    # Get the cursor, which is used to traverse the database, line by line
+    cursor = database.cursor()
+
+    # Create the INSERT INTO sql query
+
+
+    query = """INSERT INTO testdata  VALUES (%s,%s,%s)"""
+
+
+    # Create a For loop to iterate through each row in the XLS file, starting at row 2 to skip the headers
+    for r in range(1, sheet.nrows):
+        #first remove the numbers
+        state=re.sub("\d+","",sheet.cell(r,0).value)
+        #then remove the last two remaining brackets
+        state=state[:-2]
+        village=re.sub("\d+","",sheet.cell(r,4).value)
+        village=village[:-2]
+        habitation=re.sub("\d+","",sheet.cell(r,5).value)
+        habitation=habitation[:-2]
+
+    # Assign values from each row
+    values =(state,district,block,panchayat,village,habitation)
+    # Execute sql Query
+    try:
+
+        cursor.execute(query,values)
+    except:
+        pass
+
+
+
+    # Close the cursor
+    cursor.close()
+
+    # Commit the transaction
+    database.commit()
+
+    # Close the database connection
+    database.close()
+</code></pre>
+
+<p>Hope this script will help you!!!</p>
+]]></content>
+  </entry>
+  
+</feed>

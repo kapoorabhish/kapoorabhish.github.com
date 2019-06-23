@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: solr | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/solr/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Apache Solr Cursor in Python]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python/"/>
+    <updated>2016-03-18T21:40:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python</id>
+    <content type="html"><![CDATA[<p>For some time I have been using <a href="http://lucene.apache.org/solr/">Apache Solr</a> for fast querying and faceting.<br/>
+Once I needed to take the dump of whole data from solr. So I implemented a function which works as python generator and gives you the dump of data from your solr collection.<br/>
+Below is the function.</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def get_cursor_from_solr_using_cursor_mark(solr_query,timeout=5,num_rows=None,cursor_mark=&ldquo;&lt;em>&rdquo;,num_rows_in_one_shot=10,unique_field_name=&ldquo;id&rdquo;):
+</span><span class='line'>    &ldquo;&rdquo;&ldquo;
+</span><span class='line'>    The function imitates a cursor for bringing data from solr.
+</span><span class='line'>    num_rows is how many row one wants from solr. pass it None if all rows needed.
+</span><span class='line'>    cursor_mark is cursorMark query parameter of solr,
+</span><span class='line'>    num_rows_in_one_shot is kind of tuning factor for querying again and again until required number of rows are returned.
+</span><span class='line'>    &lt;/em>&lt;strong> solr query must not include rows and start parameters .&lt;/strong>*
+</span><span class='line'>    &rdquo;&ldquo;&rdquo;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>if num_rows is None:    #when all the rows are required
+</span><span class='line'>    fetch_more=True
+</span><span class='line'>    while fetch_more is True:
+</span><span class='line'>        num_rows_part="&amp;rows="+str(num_rows_in_one_shot)+"&amp;sort="+str(unique_field_name)+"+asc&amp;cursorMark="+str(cursor_mark)+"&amp;timeAllowed=-1"
+</span><span class='line'>        r=requests.get(solr_query+num_rows_part,timeout=timeout)
+</span><span class='line'>        solr_dict=r.json()
+</span><span class='line'>        num_docs=len(solr_dict['response']['docs'])
+</span><span class='line'>        cursor_mark=solr_dict.get('nextCursorMark')
+</span><span class='line'>
+</span><span class='line'>        if num_docs==0 or cursor_mark is None:
+</span><span class='line'>            fetch_more=False
+</span><span class='line'>        for each_dict in solr_dict['response']['docs']:
+</span><span class='line'>            yield (each_dict,cursor_mark)
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>else:   #when given number of rows are required
+</span><span class='line'>    for i in xrange(int(math.ceil(num_rows/float(num_rows_in_one_shot)))):
+</span><span class='line'>        fetch_more=True
+</span><span class='line'>        if fetch_more is True:
+</span><span class='line'>            q,r=divmod(num_rows,(i+1)*num_rows_in_one_shot)
+</span><span class='line'>
+</span><span class='line'>            if q==0 and r==0:
+</span><span class='line'>                break
+</span><span class='line'>            if q==0:
+</span><span class='line'>                rows=r-(i)*num_rows_in_one_shot
+</span><span class='line'>
+</span><span class='line'>            else:
+</span><span class='line'>                rows=num_rows_in_one_shot
+</span><span class='line'>
+</span><span class='line'>            num_rows_part="&amp;rows="+str(rows)+"&amp;sort="+str(unique_field_name)+"+asc&amp;cursorMark="+str(cursor_mark)+"&amp;timeAllowed=-1"
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>            r=requests.get(solr_query+num_rows_part,timeout=timeout)
+</span><span class='line'>
+</span><span class='line'>            solr_dict=r.json()
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>            num_docs=len(solr_dict['response']['docs'])
+</span><span class='line'>            cursor_mark=solr_dict.get('nextCursorMark')
+</span><span class='line'>
+</span><span class='line'>            if num_docs==0 or cursor_mark is None:
+</span><span class='line'>                fetch_more=False
+</span><span class='line'>
+</span><span class='line'>            for each_dict in solr_dict['response']['docs']:
+</span><span class='line'>                yield each_dict
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Usage of function:<br/>
+    >>>source_solr_ip=&ldquo;127.0.0.1&rdquo;
+    >>>source_solr_port=8983
+    >>>collection_name=&ldquo;test&rdquo;
+    >>>query=&ldquo;<a href="http://">http://</a>&rdquo;+source_solr_ip+&ldquo;:&rdquo;+str(source_solr_port)+&ldquo;/&rdquo;+&ldquo;solr/&rdquo;+collection_name+&ldquo;/select?q=&rdquo;+&ldquo;<em>:</em>&rdquo;+&ldquo;&amp;wt=json&rdquo;
+    >>>solr_dump_gen=get_cursor_from_solr_using_cursor_mark(query)
+    >>>for each in solr_dump_gen:
+    &hellip;.    print each</p>
+]]></content>
+  </entry>
+  
+</feed>

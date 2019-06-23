@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cgi | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/cgi/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Apache2 installation and enabling CGI on Ubuntu-12.04]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
+    <updated>2014-07-02T17:10:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
+    <content type="html"><![CDATA[<p>Recently I required to use Python for dynamic web pages. So I was required to install Apache web server and enabling the Cgi in it.
+So here I am gonna explain the whole process.</p>
+
+<p>Firstly, we need to install Apache web server.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get install apache2</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Next, we create a directory CGI where all python (or other CGI) scripts will reside.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo mkdir /var/www/cgi-bin</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Next we tell Apache which directories it can execute in and how to handle files with .py extension. So type in
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo vi /etc/apache2/sites-available/default</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Look for the following lines in the opened files
+```ruby /etc/apache2/sites-available/default
+            ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+            <Directory "/usr/lib/cgi-bin/">
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+            </Directory></p>
+
+<pre><code>And replace those lines with these
+</code></pre>
+
+<pre><code>            ScriptAlias /cgi-bin/ /var/www/cgi-bin/
+            &lt;Directory "/var/www/cgi-bin"&gt;
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+                AddHandler cgi-script .py
+                AddHandler default-handler .html .htm
+            &lt;/Directory&gt;
+</code></pre>
+
+<p>```</p>
+
+<p>And now, restart the Apache.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo service apache2 restart</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: format-specifier | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/format-specifier/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Format specifiers in C]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c/"/>
+    <updated>2014-05-21T13:03:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c</id>
+    <content type="html"><![CDATA[<p>Here, I am gonna tabulate the format specifiers used in C language.</p>
+
+<table >
+<th >Code</th>
+<th style="text-align:center;">Format</th>
+<tr>
+<td>
+%c
+</td>
+<td style="padding-left:100px;">
+Character
+</td>
+</tr>
+<tr>
+<td>
+%d
+</td>
+<td style="padding-left:100px;">
+Signed decimal integers
+</td>
+</tr>
+<tr>
+<td>
+%i
+</td>
+<td style="padding-left:100px;">
+Signed decimal integers
+</td>
+</tr>
+<tr>
+<td>
+%e
+</td>
+<td style="padding-left:100px;">
+Scientific notation (lowercase e)
+</td>
+</tr>
+<tr>
+<td>
+%E
+</td>
+<td style="padding-left:100px;">
+Scientific notation (uppercase E)
+</td>
+</tr>
+<tr>
+<td>
+%f
+</td>
+<td style="padding-left:100px;">
+Decimal floating point
+</td>
+</tr>
+<tr>
+<td>
+%g
+</td>
+<td style="padding-left:100px;">
+Uses %e or %f, whichever shorter (in length)
+</td>
+</tr>
+<tr>
+<td>
+%G
+</td>
+<td style="padding-left:100px;">
+Uses %E or %f, whichever shorter (in length)
+</td>
+</tr>
+
+
+<tr>
+<td>
+%o
+</td>
+<td style="padding-left:100px;">
+Unsigned octal
+</td>
+</tr>
+
+<tr>
+<td>
+%s
+</td>
+<td style="padding-left:100px;">
+String of characters
+</td>
+</tr>
+
+<tr>
+<td>
+%u
+</td>
+<td style="padding-left:100px;">
+Unsigned decimal integers
+</td>
+</tr>
+
+<tr>
+<td>
+%x
+</td>
+<td style="padding-left:100px;">
+Unsigned hexadecimal (lowercase letters)
+</td>
+</tr>
+
+<tr>
+<td>
+%X
+</td>
+<td style="padding-left:100px;">
+Unsigned hexadecimal (uppercase letters)
+</td>
+</tr>
+
+<tr>
+<td>
+%p
+</td>
+<td style="padding-left:100px;">
+Displays a pointer
+</td>
+</tr>
+
+<tr>
+<td>
+%n
+</td>
+<td style="padding-left:100px;">
+<br>
+The associated argument must be a pointer to an integer. This specifier causes the number of characters written so far to be put into that integer
+</td>
+</tr>
+
+<tr>
+<td>
+%%
+</td>
+<td style="padding-left:100px;">
+Prints a % sign.
+</td>
+</tr>
+
+<tr>
+<td>
+%ld
+</td>
+<td style="padding-left:100px;">
+&nbsp;&nbsp;Long int
+</td>
+</tr>
+
+<tr>
+<td>
+%lf
+</td>
+<td style="padding-left:100px;">
+Double floating point number.
+</td>
+</tr>
+
+<tr>
+<td>
+%Lf
+</td>
+<td style="padding-left:100px;">
+Long Double floating point number.
+</td>
+</tr>
+</table>
+
+]]></content>
+  </entry>
+  
+</feed>

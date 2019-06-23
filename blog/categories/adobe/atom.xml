@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: adobe | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/adobe/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Installing Adobe Reader on Linux]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux/"/>
+    <updated>2013-07-12T14:52:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux</id>
+    <content type="html"><![CDATA[<p>For installing Adobe Reader on Linux OS try the folowing commands.<br/>
+<code>ruby Install Adobe Reader
+            $ sudo add-apt-repository "deb http://archive.canonical.com/ precise partner"
+            $ sudo add-apt-repository "deb http://archive.canonical.com/ precise partner"
+            $ sudo apt-get install acroread
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

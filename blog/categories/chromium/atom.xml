@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: chromium | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/chromium/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[pdf support for Chromium]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium/"/>
+    <updated>2013-07-12T22:12:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium</id>
+    <content type="html"><![CDATA[<p>I didn&rsquo;t have pdf format support in my Chromium Browser. So I tried the following commands for it. <br/>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get install acroread
+</span><span class='line'>$ sudo apt-get install mozplugger</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Next, open the file /etc/mozpluggerrc as a superuser.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gedit /etc/mozpluggerrc</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Change the line which reads<br/>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>define(ACROREAD, [repeat swallow(acroread) fill : acroread -openInNewWindow /a &ldquo;$fragment&rdquo; &ldquo;$file&rdquo;])</span></code></pre></td></tr></table></div></figure></p>
+
+<p> To</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>define(ACROREAD, [repeat needs_xembed swallow(acroread) fill : acroread -openInNewWindow /a &ldquo;$fragment&rdquo; &ldquo;$file&rdquo;])</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+</feed>

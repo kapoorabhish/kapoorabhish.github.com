@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: lubuntu | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/lubuntu/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Reliance Net Connect on Lubuntu]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu/"/>
+    <updated>2014-05-27T22:32:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu</id>
+    <content type="html"><![CDATA[<p>I just got a Reliance Net Connect from one of my friend and tried it to run on Lubuntu. The task was so easy. It took me to run just few commands.</p>
+
+<p>You need to install two software packages to make the internet connectivity work. They are wvdial and gnome-ppp (The front-end tool to configure wvdial).</p>
+
+<p>1.Installation of &ldquo;wvdial&rdquo;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install wvdial</span></code></pre></td></tr></table></div></figure></p>
+
+<p>2.Install gnome-ppp
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install gnome-ppp</span></code></pre></td></tr></table></div></figure></p>
+
+<p>3.Open gnome-ppp from the terminal.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gnome-ppp</span></code></pre></td></tr></table></div></figure></p>
+
+<p>4.You have to enter your reliance 10-digit mobile number in the Username &amp; your password. Select #777 if you are a Reliance Netconnect Broadband+ user. Then press the Setup button below.</p>
+
+<p>5.In the Setup window below, click the “Detect” button to identify the device ID of the USB port in which you have inserted your USB modem. The tool would automatically detect the Device, Type and Speed of your USB modem. Once it has deteced, please the “Close” button below.</p>
+
+<p>Once this is done click on Connect!!!
+<br>
+<br></p>
+
+<h6>Source-askubuntu.com</h6>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gotta problem with WI-FI on Lubuntu-10.04]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04/"/>
+    <updated>2014-05-08T21:04:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04</id>
+    <content type="html"><![CDATA[<p>I work on Lubuntu-10.04. Accidentally I removed the desktop panel two days back. In short I lost all the icons on the panel.<br>
+I added all the icons back (which I possibly could!).
+One big problem I faced is ,I was helpless, &ldquo;How to turn on the WI-FI, since I could not find the icon for it.&rdquo;
+The only icon I could found was for Ethernet.<br>
+So here is the solution.<br>
+First I discovered that my wifi was not ON.
+I tested it with the command
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ifconfig</span></code></pre></td></tr></table></div></figure></p>
+
+<p>The only ethernet interface was ON.<br></p>
+
+<p>So after that I tried this command.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo ifconfig wlan0 up</span></code></pre></td></tr></table></div></figure></p>
+
+<p>And got the error.</p>
+
+<pre><code>    SIOCSIFFLAGS: Operation not possible due to RF-kill
+</code></pre>
+
+<p>Now, needed to pay attention to RF-kill.<br>
+First checked the status of Rf-kill managed devices.</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rfkill list</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Output.</p>
+
+<pre><code>    0: hci0: Bluetooth
+        Soft blocked: no
+        Hard blocked: no
+    1: phy0: Wireless LAN
+        Soft blocked: yes
+        Hard blocked: no
+    2: tpacpi_bluetooth_sw: Bluetooth
+        Soft blocked: no
+        Hard blocked: no
+</code></pre>
+
+<p>which says wi-fi is soft-blocked.<br>
+So solved this problem by
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo rfkill unblock wlan</span></code></pre></td></tr></table></div></figure></p>
+
+<p>now the output is</p>
+
+<pre><code>    0: hci0: Bluetooth
+        Soft blocked: no
+        Hard blocked: no
+    1: phy0: Wireless LAN
+        Soft blocked: no
+        Hard blocked: no
+    2: tpacpi_bluetooth_sw: Bluetooth
+        Soft blocked: no
+        Hard blocked: no
+</code></pre>
+
+<p>now, there was no error in ifconfig.
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo ifconfig wlan0 up</span></code></pre></td></tr></table></div></figure></p>
+
+<p>now, it&rsquo;s time to know the network in range. So
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo iwlist wlan0 scanning</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Now time to add icon for wi-fi.<br>
+So, go to desktop panel settings and add &ldquo;Manage Networks&rdquo; plugin.</p>
+]]></content>
+  </entry>
+  
+</feed>

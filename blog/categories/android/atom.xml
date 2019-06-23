@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: android | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Failed to load libGL.so in android]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/07/11/failed-to-load-libgl-dot-so-in-android/"/>
+    <updated>2013-07-11T16:27:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/07/11/failed-to-load-libgl-dot-so-in-android</id>
+    <content type="html"><![CDATA[<p>Getting error while launchin AVD!!
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[2012-07-11 04:15:17 -Emulator] error libGL.so: cannot open shared object file: No such file or directory
+</span><span class='line'>[2012-07-11 04:15:17 -Emulator] Failed to load libGL.so</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Try this command!</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /usr/lib32/fglrx/libGL.so.1.2 /usr/lib/libGL.so</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Running Ubuntu on Android]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2013/06/13/running-ubuntu-on-android/"/>
+    <updated>2013-06-13T11:24:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2013/06/13/running-ubuntu-on-android</id>
+    <content type="html"><![CDATA[<p><html>
+<body></p>
+
+<iframe width="790" height="435"
+src="http://www.youtube.com/embed/I0PNsnNe3E0/">
+</iframe>
+
+
+<p></body>
+</html></p>
+]]></content>
+  </entry>
+  
+</feed>

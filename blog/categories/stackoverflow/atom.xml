@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: stackoverflow | Abhish's Blog]]></title>
+  <link href="http://kapoorabhish.github.io/blog/categories/stackoverflow/atom.xml" rel="self"/>
+  <link href="http://kapoorabhish.github.io/"/>
+  <updated>2019-06-23T23:44:20+05:30</updated>
+  <id>http://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Pentaho Spoon Cassandra connection error]]></title>
+    <link href="http://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error/"/>
+    <updated>2014-09-27T18:35:00+05:30</updated>
+    <id>http://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error</id>
+    <content type="html"><![CDATA[<p>While doing ETL process using spoon I got the error like this.</p>
+
+<pre><code>    An unexpected error occurred in Spoon:  
+    Could not initialize class org.apache.thrift.transport.TSocket
+    java.lang.NoClassDefFoundError: Could not initialize class org.apache.thrift.transport.TSocket
+        at org.pentaho.cassandra.legacy.CassandraConnection.openConnection(CassandraConnection.java:234)
+        at org.pentaho.cassandra.legacy.CassandraConnection.checkOpen(CassandraConnection.java:151)
+        at org.pentaho.cassandra.legacy.CassandraConnection.setKeyspace(CassandraConnection.java:174)
+        at org.pentaho.cassandra.legacy.LegacyKeyspace.setKeyspace(LegacyKeyspace.java:93)
+        at org.pentaho.cassandra.legacy.CassandraConnection.getKeyspace(CassandraConnection.java:277)
+        at org.pentaho.di.trans.steps.cassandrainput.CassandraInputDialog.popupSchemaInfo(CassandraInputDialog.java:926)
+        at org.pentaho.di.trans.steps.cassandrainput.CassandraInputDialog$12.widgetSelected(CassandraInputDialog.java:518)
+        at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)
+        at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+        at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+        at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+        at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+        at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1227)
+        at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:7368)
+        at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:8673)
+        at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:625)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+        at java.lang.reflect.Method.invoke(Unknown Source)
+        at org.pentaho.commons.launcher.Launcher.main(Launcher.java:134)
+</code></pre>
+
+<p>After surfing net for the solution I finally found the solution on <a href="http://stackoverflow.com/">stackoverflow</a>.
+And here is the solution provided by them.</p>
+
+<p>Just copy the jar files mentioned below</p>
+
+<pre><code>        data-integration/lib/log4j-1.2.16.jar
+        data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-api-1.7.3.jar
+        data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar
+</code></pre>
+
+<p>to</p>
+
+<pre><code>        data-integration/plugins/pentaho-cassandra-plugin/lib/
+</code></pre>
+
+<p>P.S. - Thanks to the community of <a href="http://stackoverflow.com/">stackoverflow</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

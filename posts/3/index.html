@@ -1,0 +1,1012 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Abhish's Blog</title>
+    <meta name="author" content="Abhishek Kapoor">
+    
+	<meta name="description" content="Published on: Tags: database, excel, mysql, python State Name
+Village Name
+Habitation Name ANDHRA PRADESH &nbsp;
+J.K.GUMADA(001 ) &nbsp;
+J.K.GUMADA &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Abhish's Blog" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.ico" rel="shortcut icon">
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
+
+    <!-- remove or comment it to disable ajaxification -->   
+    <script src="/javascripts/ajaxify.js"></script>
+   
+    
+    
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-42439079-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+    <div id="wrapper">
+    <header id="header" class="inner"><!-- for more effects see _animate.scss -->
+<h1 class="animated bounceInDown">
+    <div id="headerbg">
+        Abhishek Kapoor
+    </div>
+</h1>
+<br>
+
+<ul id="social-links" style="text-align:center">
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+
+<!-- use full url including 'index.html' for navigation bar if you are using ajax -->
+<ul id="nav">
+    <li id="ajax"><a href="/index.html">Home</a></li>
+    <li id="ajax"><a href="/blog/archives/index.html">Archives</a></li>
+    <li id="ajax"><a href="/about">About Me</a></li>
+    <li id="ajax"><a href="/resume">Resume</a></li>
+    <li><a href="/atom.xml">RSS</a></li>
+    
+    <li>
+    <div id="dark">
+        <form method="get" action="/search.html" id="search">
+            <input name="query" type="text" placeholder="Search..." x-webkit-speech />
+        </form>
+    </div>
+    </li>
+        
+</ul>
+
+
+
+
+</header>
+
+<div id="toload">
+<!-- begin toload --> 
+    <div id="content" class="inner">
+        
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/07/05/removing-special-characters-and-populating-database-using-python/">
+		
+			Removing Special Characters &amp; Populating Database Using Python</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-05T21:59:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/database/'>database</a>, <a class='category' href='/blog/categories/excel/'>excel</a>, <a class='category' href='/blog/categories/mysql/'>mysql</a>, <a class='category' href='/blog/categories/python/'>python</a>
+
+
+</div>
+    </div>
+		<table>
+<th>State Name</th>
+<th>Village Name</th>
+<th>Habitation Name</th>
+<tr>
+<td>ANDHRA PRADESH    &nbsp;</td>
+<td>J.K.GUMADA(001 )    &nbsp;</td>
+<td>J.K.GUMADA (0101302001010100)</td>
+</tr>
+<tr>
+<td>ANDHRA PRADESH    &nbsp;</td>
+<td>V.V.R.PETA(002 )    &nbsp;</td>
+<td>V.V.R.PETA(0101302002010100)</td>
+</tr>
+</table>
+
+
+<p></p>
+
+<p>If a table as shown above is there which contains some text, numbers and some special characters and we need to populate our database after removing all the numbers and special characters.<br/>
+Here I am posting a Python script to complete the task.</p>
+
+<figure class='code'><figcaption><span>populatedata.py</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">import</span> <span class="n">xlrd</span>
+</span><span class='line'><span class="n">import</span> <span class="no">MySQLdb</span>
+</span><span class='line'><span class="n">import</span> <span class="n">re</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Open the workbook and define the worksheet</span>
+</span><span class='line'><span class="n">book</span><span class="o">=</span> <span class="n">xlrd</span><span class="o">.</span><span class="n">open_workbook</span><span class="p">(</span><span class="s2">&quot;testdata1.xls&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">sheet</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">sheet_by_name</span><span class="p">(</span><span class="s2">&quot;testdata1&quot;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Establish a MySQL connection</span>
+</span><span class='line'><span class="n">database</span> <span class="o">=</span> <span class="no">MySQLdb</span><span class="o">.</span><span class="n">connect</span> <span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span> <span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="n">passwd</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span><span class="p">,</span> <span class="n">db</span> <span class="o">=</span> <span class="s2">&quot;database_name&quot;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Get the cursor, which is used to traverse the database, line by line</span>
+</span><span class='line'><span class="n">cursor</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Create the INSERT INTO sql query</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;INSERT INTO testdata  VALUES (%s,%s,%s)&quot;&quot;&quot;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Create a For loop to iterate through each row in the XLS file, starting at row 2 to skip the headers</span>
+</span><span class='line'><span class="k">for</span> <span class="n">r</span> <span class="k">in</span> <span class="n">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">sheet</span><span class="o">.</span><span class="n">nrows</span><span class="p">):</span>
+</span><span class='line'>  <span class="c1">#first remove the numbers</span>
+</span><span class='line'>  <span class="n">state</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;\d+&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</span><span class='line'>  <span class="c1">#then remove the last two remaining brackets</span>
+</span><span class='line'>  <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="o">[</span><span class="ss">:-</span><span class="mi">2</span><span class="o">]</span>
+</span><span class='line'>  <span class="n">village</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;\d+&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">village</span><span class="o">=</span><span class="n">village</span><span class="o">[</span><span class="ss">:-</span><span class="mi">2</span><span class="o">]</span>
+</span><span class='line'>  <span class="n">habitation</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;\d+&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">habitation</span><span class="o">=</span><span class="n">habitation</span><span class="o">[</span><span class="ss">:-</span><span class="mi">2</span><span class="o">]</span>
+</span><span class='line'>  
+</span><span class='line'><span class="c1"># Assign values from each row</span>
+</span><span class='line'><span class="n">values</span> <span class="o">=</span><span class="p">(</span><span class="n">state</span><span class="p">,</span><span class="n">district</span><span class="p">,</span><span class="n">block</span><span class="p">,</span><span class="n">panchayat</span><span class="p">,</span><span class="n">village</span><span class="p">,</span><span class="n">habitation</span><span class="p">)</span>
+</span><span class='line'><span class="c1"># Execute sql Query</span>
+</span><span class='line'><span class="ss">try</span><span class="p">:</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">values</span><span class="p">)</span>
+</span><span class='line'><span class="ss">except</span><span class="p">:</span>
+</span><span class='line'>  <span class="n">pass</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Close the cursor</span>
+</span><span class='line'><span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Commit the transaction</span>
+</span><span class='line'><span class="n">database</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Close the database connection</span>
+</span><span class='line'><span class="n">database</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Hope this script will help you!!!</p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/07/05/removing-special-characters-and-populating-database-using-python//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/06/26/populating-database-using-python-script/">
+		
+			Populating Database Using Python Script</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-26T21:42:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/database/'>database</a>, <a class='category' href='/blog/categories/excel/'>excel</a>, <a class='category' href='/blog/categories/mysql/'>mysql</a>, <a class='category' href='/blog/categories/python/'>python</a>
+
+
+</div>
+    </div>
+		<p>I am having an excel file which contains near about 11000 rows,from which I needed to populate my database, so I tried the following Python Script.</p>
+
+<figure class='code'><figcaption><span>populate.py</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">import</span> <span class="n">xlrd</span>
+</span><span class='line'><span class="n">import</span> <span class="no">MySQLdb</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Open the workbook and define the worksheet</span>
+</span><span class='line'><span class="n">book</span> <span class="o">=</span> <span class="n">xlrd</span><span class="o">.</span><span class="n">open_workbook</span><span class="p">(</span><span class="s2">&quot;ITCHS_2012.xls&quot;</span><span class="p">)</span>    <span class="c1">#open the excel file </span>
+</span><span class='line'><span class="n">sheet</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">sheet_by_name</span><span class="p">(</span><span class="s2">&quot;ITCHS&quot;</span><span class="p">)</span>        <span class="c1">#name of the sheet</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Establish a MySQL connection</span>
+</span><span class='line'><span class="n">database</span> <span class="o">=</span> <span class="no">MySQLdb</span><span class="o">.</span><span class="n">connect</span> <span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&quot;hostname&quot;</span><span class="p">,</span> <span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="n">passwd</span> <span class="o">=</span> <span class="s2">&quot;pwd&quot;</span><span class="p">,</span> <span class="n">db</span> <span class="o">=</span> <span class="s2">&quot;batabase&quot;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Get the cursor, which is used to traverse the database, line by line</span>
+</span><span class='line'><span class="n">cursor</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Create the INSERT INTO sql query</span>
+</span><span class='line'><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;INSERT INTO final4 VALUES (%s, %s, %s, %s, %s, %s, %s, %s)&quot;&quot;&quot;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Create a For loop to iterate through each row in the XLS file, starting at row 2 to skip the headers</span>
+</span><span class='line'><span class="k">for</span> <span class="n">r</span> <span class="k">in</span> <span class="n">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">sheet</span><span class="o">.</span><span class="n">nrows</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">itc</span><span class="o">=</span><span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</span><span class='line'>  <span class="n">description</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</span><span class='line'>  <span class="n">hs4</span>   <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</span><span class='line'>  <span class="n">hs5</span>   <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</span><span class='line'>  <span class="n">hs6</span>  <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</span><span class='line'>  <span class="n">hs8</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</span><span class='line'>  <span class="n">policy</span>  <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</span><span class='line'>  <span class="n">conditions</span><span class="o">=</span><span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</span><span class='line'>  <span class="c1"># Assign values from each row</span>
+</span><span class='line'>  <span class="n">values</span> <span class="o">=</span><span class="p">(</span><span class="n">itc</span><span class="p">,</span><span class="n">description</span><span class="p">,</span><span class="n">hs4</span><span class="p">,</span><span class="n">hs5</span><span class="p">,</span><span class="n">hs6</span><span class="p">,</span><span class="n">hs8</span><span class="p">,</span><span class="n">policy</span><span class="p">,</span><span class="n">conditions</span><span class="p">)</span>
+</span><span class='line'>  <span class="c1"># Execute sql Query</span>
+</span><span class='line'>  <span class="ss">try</span><span class="p">:</span>
+</span><span class='line'>      <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+</span><span class='line'>  <span class="ss">except</span><span class="p">:</span>
+</span><span class='line'>      <span class="n">pass</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Close the cursor</span>
+</span><span class='line'><span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Commit the transaction</span>
+</span><span class='line'><span class="n">database</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Close the database connection</span>
+</span><span class='line'><span class="n">database</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You just need to create a table first in the database and run the above script.
+In the above script I have used the variable names according to field names of my table.</p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/06/26/populating-database-using-python-script//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/06/23/general-policy-for-export-on-an-item/">
+		
+			General Policy for Export on an Item</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-23T11:34:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/export/'>export</a>, <a class='category' href='/blog/categories/import/'>import</a>, <a class='category' href='/blog/categories/policy/'>policy</a>
+
+
+</div>
+    </div>
+		<p>Generally the Export policy on an item is one of the following:</p>
+
+<ul>
+<li><p><strong>Prohibited</strong> - Not permitted for Export. Licence will not be given in the normal course.</p></li>
+<li><p><strong>Restricted</strong> - Export is permitted under a licence granted by DGFT.</p></li>
+<li><p><strong>STE</strong> - Export allowed only through specified State Trading Enterprises subject to specific(STEs) conditions laid out in the FTP and also PARA 2.11 of the Import and Export Policy.</p></li>
+</ul>
+
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/06/23/general-policy-for-export-on-an-item//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/06/20/phoronix-test-suite/">
+		
+			Phoronix Test Suite</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-20T13:02:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/phoronix/'>phoronix</a>
+
+
+</div>
+    </div>
+		<p>I got a task to test a server which we made and named it <b>Ant</b>.It has <b>Centos 6</b> installed on it.<br/>
+As suggested I made use of <b>Phoronix Test Suite</b>.<br/>
+So here I am posting how to install it on Centos.</p>
+
+<h3>Phoronix Test Suite- An Automated, Open-Source Testing Framework</h3>
+
+
+<p>The Phoronix Test Suite is the most comprehensive testing and benchmarking platform available for the Linux operating system. This software is designed to effectively carry out both qualitative and quantitative benchmarks in a clean, reproducible, and easy-to-use manner. The Phoronix Test Suite consists of a lightweight processing core (pts-core) with each benchmark consisting of an XML-based profile with related resource scripts. The process from the benchmark installation, to the actual benchmarking, to the parsing of important hardware and software components is heavily automated and completely repeatable, asking users only for confirmation of actions.</p>
+
+<p><a href="http://pkgs.org/centos-6-rhel-6/epel-i386/phoronix-test-suite-3.8.0-1.el6.noarch.rpm/download/" targe=_blank>Download phoronix-test-suite</a></p>
+
+<figure class='code'><figcaption><span>Install Howto</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="no">Download</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">epel</span><span class="o">-</span><span class="n">release</span> <span class="n">rpm</span> <span class="n">from</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="ss">http</span><span class="p">:</span><span class="sr">//</span><span class="n">dl</span><span class="o">.</span><span class="n">fedoraproject</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">pub</span><span class="o">/</span><span class="n">epel</span><span class="o">/</span><span class="mi">6</span><span class="o">/</span><span class="n">i386</span><span class="o">/</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="no">Install</span> <span class="n">epel</span><span class="o">-</span><span class="n">release</span> <span class="ss">rpm</span><span class="p">:</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1"># rpm -Uvh epel-release*rpm</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="no">Install</span> <span class="n">phoronix</span><span class="o">-</span><span class="nb">test</span><span class="o">-</span><span class="n">suite</span> <span class="n">rpm</span> <span class="ss">package</span><span class="p">:</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1"># yum install phoronix-test-suite</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h6>from-pkgs.org</h6>
+
+
+
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/06/20/phoronix-test-suite//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/06/14/accesing-csv-file-using-shell-script/">
+		
+			Accesing Text File Using Shell Script.</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-14T08:19:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/shell/'>shell</a>, <a class='category' href='/blog/categories/shell-script/'>shell-script</a>
+
+
+</div>
+    </div>
+		<p>Given a text file in which there are links of file to be dowloaded (one link per line), here I am posting a shell script to achieve the task.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>myfilename=/home/abhishek/Desktop/ideas.txt      #here path to txt file has been stored in $myfilename
+</span><span class='line'>  while read line
+</span><span class='line'>  do
+</span><span class='line'>      curl --remote-name $line
+</span><span class='line'>
+</span><span class='line'>  done        &lt;$myfilename</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The above shell script reads the ideas.txt file line by line and download all the files in the current directory.</p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/06/14/accesing-csv-file-using-shell-script//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/06/13/running-ubuntu-on-android/">
+		
+			Running Ubuntu on Android</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-13T11:24:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/android/'>android</a>, <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a>
+
+
+</div>
+    </div>
+		<p><html>
+<body></p>
+
+<iframe width="790" height="435"
+src="http://www.youtube.com/embed/I0PNsnNe3E0/">
+</iframe>
+
+
+<p></body>
+</html></p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/06/13/running-ubuntu-on-android//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/06/11/virtual-env/">
+		
+			Setting Virtual Environment in Linux</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-11T13:25:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/python/'>python</a>, <a class='category' href='/blog/categories/virtualenvironment/'>virtualenvironment</a>
+
+
+</div>
+    </div>
+		<p>To set up a Virtual Environment, you first need to install <b>&ldquo;virtualenvwrapper&rdquo;</b>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ pip install virtualenvwrapper</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ pip easy_install virtualenvwrapper</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Setup:<br/>
+Create a directory to hold the virtual environments.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mkdir $HOME/.virtualenvs</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now,make a environment variable which has the path of .virtualenvs</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ export WORKON_HOME=$HOME/.virtualenvs</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Next run the shell script virtualenvwrapper.sh</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ source virtualenvwrapper.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+Run: workon</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ workon</span></code></pre></td></tr></table></div></figure>
+
+
+<p>A list of environments, empty, is printed.<br/>
+Run: mkvirtualenv temp.  This includes A virtual environment &ldquo;temp&rdquo;.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mkvirtualenv temp.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Run: workon temp.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ workon temp</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>The virtual environment is activated.</p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/06/11/virtual-env//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/06/04/rake-generate-error/">
+		
+			Rake Generate Error</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T18:07:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/rake/'>rake</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
+
+
+</div>
+    </div>
+		<p>&ldquo;Error during rake generate&rdquo;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Could not find rake-0.9.2.2 in any of the sources
+</span><span class='line'>Run `bundle install` to install missing gems.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Please try this command.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/bin/bash --login</span></code></pre></td></tr></table></div></figure>
+
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/06/04/rake-generate-error//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/06/04/how-we-test-browsers/">
+		
+			How We Test Browsers!!</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T18:07:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/browser/'>browser</a>, <a class='category' href='/blog/categories/cnet/'>cnet</a>
+
+
+</div>
+    </div>
+		<p>By CNET</p>
+
+<p> The Web browser is the most-used kind of software in the world, having become the de facto way that people access the Internet. Today, virtually all computing tasks can be completed in the browser.</p>
+
+<p>Testing browsers can veer from incredibly complex to shockingly simple, depending on what you&rsquo;re looking for and why. At CNET, we prefer a holistic approach to browser benchmarking, looking at a combination of tests that benchmark general browser behavior, as well as several &ldquo;real-world&rdquo; tests that look at browser performance in common scenarios.</p>
+
+<h3>How we test desktop browsers</h3>
+
+
+<p>We run each of the following three times, and restart the computer before each test, so that the browser is starting &ldquo;cold.&rdquo; We also wait 30 seconds after booting the browser to ensure that any background processes have been completed. Then we average the three tests.</p>
+
+<h3>  Performance benchmarks</h3>
+
+
+<p>The <a href="http://acid3.acidtests.org/">Acid3</a> test from the <a href="http://www.webstandards.org/">Web Standards Project</a> checks browser compliance with accepted standards. Slightly outdated since it doesn&rsquo;t look at HTML5, which has now been finalized, it remains a good way to establish a baseline. Browsers that don&rsquo;t hit 100 out of 100 on the Acid3 are behind the times in a fundamental, crucial way.</p>
+
+<p><a href=https://developers.google.com/octane/  target=_blank" >Google Octane</a>, the successor to Google&rsquo;s <a href=http://v8.googlecode.com/svn/data/benchmarks/v7/run.html target=_blank>  V8 benchmark test</a>, looks at JavaScript performance by testing such areas as code optimization, encryption and decryption, emulation, and array manipulation, and assigning each subtest a number. The higher the final score, the better.</p>
+
+<p><a href=http://krakenbenchmark.mozilla.org/ target=_blank>Mozilla Kraken</a> is another JavaScript performance test, which looks specifically at rendering times for audio, imaging, AI, JSON, and encryption. A smaller number is better for the final score.</p>
+
+<p>The <a href=http://html5test.com/ target=_blank>HTML5 Test</a> assigns points for each HTML5 feature that the browser supports, out of a total of 500. This is a rough way to gauge how future-forward the browser is.</p>
+
+<p><a href=https://github.com/facebook/jsgamebench/ target=_blank>JSGameBench</a>, GUImark3 (<a href=http://www.craftymind.com/factory/guimark2/HTML5GamingTest.html target=_blank>gaming test</a>, <a href=http://www.craftymind.com/factory/guimark2/HTML5TextTest.html target=_blank >text test</a>), and <a href=http://ie.microsoft.com/testdrive/views/sitemap target=_blank >Microsoft FishIE Tank </a>look at HTML5 Canvas performance in several different game-like environments. Canvas is an important part of HTML5 to test because it creates all the nifty 2D images and shapes that can move across your screen.</p>
+
+<p> Each of these three tests uses a different standard. FishIE Tank, for example, lets the tester set the number of fish on the screen. The test will then show you in how many frames per second they can be rendered.</p>
+
+<p>Microsoft Chalkboard runs a series of timed tests on HTML5 panning, zooming, and scaling. Faster is better.</p>
+
+<p>Facebook Ringmark checks HTML5 feature support, geared for the needs of the mobile browser. Nevertheless, it works well on desktops and provides a good and rare point of comparison between desktop and mobile.</p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/06/04/how-we-test-browsers//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/06/01/institute-of-informatics-and-communication-iic/">
+		
+			Institute of Informatics &amp; Communication (IIC)</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-01T14:06:00+05:30" pubdate data-updated="true"></time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/du/'>du</a>, <a class='category' href='/blog/categories/iic/'>iic</a>, <a class='category' href='/blog/categories/informatics/'>informatics</a>, <a class='category' href='/blog/categories/udsc/'>udsc</a>
+
+
+</div>
+    </div>
+		<p>The Institute of Informatics and Communication of the University of Delhi South Campus is a unique institution from several points of view. For one, it offers a two-year M Sc (Informatics) and three-year MIT course* that combines high-end knowledge with useful real world applications in several areas of information technology and communications. For another, it trains the student to think analytically and imparts a degree of maturity and independence to the student through some innovative schemes. The Institute also trains its students to imbibe the ability to stay abreast with recent developments in the various areas that are related to Informatics so that they are able to perform at optimum levels in their subsequent professional careers. The curriculum at Institute of Informatics and Communication (IIC) attempts to prepare its graduates for meaningful and challenging jobs in IT Industry. The learning environment in the Institute encourages initiative, teamwork and development of entrepreneurial skills.</p>
+
+<p>The learning approach at IIC includes classroom lectures, tutorials, project assignment and Internet access. The students are encouraged to develop their skills and acquire theoretical knowledge and practical training in electronics, telecommunication and computer hardware and software. To improve the communication skills of students and to increase their confidence, students are required to make presentations with the help of visual aids during the fortnightly seminar sessions.</p>
+
+<p>The management of the Institute and its Advisory Board consists of competent individuals drawn from the fields of education and training, administration and industry. Their vision and experience have been a constant source of energy to shape the growth and functioning of the Institute.</p>
+
+<p>The selection process to enter the Postgraduate programme is rigorous and the number of seats is restricted to ensure quality education.  The Institute provides an excellent environment for learning and innovation.</p>
+
+<p>IIC graduates have been well-placed in Government, Public, Private and Multinational organization through Campus placements such as HSS, C-DOT, HFCL, Bharti Telecom, Siemens, Wipro Technologies, IBM, HCL-Perot, Infosys Technologies and many other corporate and government organisations.</p>
+
+<p>Managing Committee:</p>
+
+<ul>
+<li>Prof. Dinesh Singh, Chairman, UDSC</li>
+<li><p>Dr. M. K. Das, IIC</p></li>
+<li><p>Mr. Kiran Karnik</p></li>
+<li><p>Dr. Sanjeev Singh, IIC</p></li>
+<li><p>Dr. S.N. Maheshwari, IIT Delhi</p></li>
+<li>Dr. Mridula Gupta, DoES, UDSC</li>
+</ul>
+
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/06/01/institute-of-informatics-and-communication-iic//posts/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+<nav id="pagenavi">
+    
+        <a href="2" class="prev">Prev</a>
+    
+    
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav>
+
+    </div>
+    <footer id="footer">
+    <div style="display:inline">
+    Copyright &copy; 2019
+
+    Abhishek Kapoor
+. Powered by <a href="http://octopress.org">Octopress</a> | 
+    Theme <a href="http://github.com/panks/fabric">fabric</a> by <a href="http://panks.me">Pankaj Kumar</a>
+</div>
+
+
+    </footer>
+    <script src="/javascripts/fabric.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'kapoorabhish';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+<!-- end toload --> 
+</div>
+</div>
+<script src="/javascripts/jquery.ui.totop.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+;(function($){$().UItoTop({easingType:'easeOutCirc'});})(jQuery); 
+/*]]>*/
+</script><!-- remove it to remove the scroll to top button -->
+</body>
+</html>
