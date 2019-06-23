@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: csv | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/csv/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/csv/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sorting a CSV file using Python]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python/"/>
     <updated>2013-07-26T18:16:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python</id>
     <content type="html"><![CDATA[<p>Today ,just got the the task to sort a CSV file. I tried it using Python and completed the task.<br/>
 So here is my python script.</p>
 

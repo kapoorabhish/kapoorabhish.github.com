@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ubuntu | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Google Chrome on Ubuntu-12.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/07/26/google-chrome-on-ubuntu-12-dot-04/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/07/26/google-chrome-on-ubuntu-12-dot-04/"/>
     <updated>2014-07-26T19:56:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/07/26/google-chrome-on-ubuntu-12-dot-04</id>
+    <id>https://kapoorabhish.github.io/blog/2014/07/26/google-chrome-on-ubuntu-12-dot-04</id>
     <content type="html"><![CDATA[<p>On linux(Ubuntu) you can install Chromium browser using apt-get, but to install <strong>Chrome</strong> you need to run some commands to make it install using apt-get.<br>
 First, get a repository key and add it to your system.
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -41,9 +41,9 @@ First, get a repository key and add it to your system.
   
   <entry>
     <title type="html"><![CDATA[Reliance Net Connect on Ubuntu-12.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu/"/>
     <updated>2014-07-07T21:29:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu</id>
+    <id>https://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu</id>
     <content type="html"><![CDATA[<p>After surfing so many posts on Internet about installing and running Reliance Net Connect on Ubuntu, finally I was successful.
 I have HUAWEI (model no. HUAWEI EC1262).</p>
 
@@ -95,9 +95,9 @@ At last, open up the terminal give the following command
   
   <entry>
     <title type="html"><![CDATA[Apache2 installation and enabling CGI on Ubuntu-12.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
     <updated>2014-07-02T17:10:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
+    <id>https://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
     <content type="html"><![CDATA[<p>Recently I required to use Python for dynamic web pages. So I was required to install Apache web server and enabling the Cgi in it.
 So here I am gonna explain the whole process.</p>
 
@@ -147,9 +147,9 @@ So here I am gonna explain the whole process.</p>
   
   <entry>
     <title type="html"><![CDATA[Installing Adobe Reader on Linux]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux/"/>
     <updated>2013-07-12T14:52:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux</id>
     <content type="html"><![CDATA[<p>For installing Adobe Reader on Linux OS try the folowing commands.<br/>
 <code>ruby Install Adobe Reader
             $ sudo add-apt-repository "deb http://archive.canonical.com/ precise partner"
@@ -161,9 +161,9 @@ So here I am gonna explain the whole process.</p>
   
   <entry>
     <title type="html"><![CDATA[Installing phpMyAdmin]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/08/installing-phpmyadmin/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/08/installing-phpmyadmin/"/>
     <updated>2013-07-08T22:29:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/08/installing-phpmyadmin</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/08/installing-phpmyadmin</id>
     <content type="html"><![CDATA[<p>Here I am going to post some steps in order to install phpMyAdmin.<br/>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install phpmyadmin</span></code></pre></td></tr></table></div></figure></p>

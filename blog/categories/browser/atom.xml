@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: browser | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/browser/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/browser/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[how we test browsers!!]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/06/04/how-we-test-browsers/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/06/04/how-we-test-browsers/"/>
     <updated>2013-06-04T18:07:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/06/04/how-we-test-browsers</id>
+    <id>https://kapoorabhish.github.io/blog/2013/06/04/how-we-test-browsers</id>
     <content type="html"><![CDATA[<p>By CNET</p>
 
 <p> The Web browser is the most-used kind of software in the world, having become the de facto way that people access the Internet. Today, virtually all computing tasks can be completed in the browser.</p>

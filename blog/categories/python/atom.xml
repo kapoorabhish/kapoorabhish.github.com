@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: python | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/python/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/python/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Introduction to Python Decorators]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators/"/>
+    <link href="https://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators/"/>
     <updated>2016-08-17T21:29:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators</id>
+    <id>https://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators</id>
     <content type="html"><![CDATA[<p>Here is the presentation which I created recently on Python Decorators.
 <script async="true" class="speakerdeck-embed" data-id="2bc365ea5d8e4526a5391d9633dbc904" src="//speakerdeck.com/assets/embed.js"> </script></p>
 
@@ -35,9 +35,9 @@
   
   <entry>
     <title type="html"><![CDATA[Apache Solr Cursor in Python]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python/"/>
+    <link href="https://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python/"/>
     <updated>2016-03-18T21:40:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python</id>
+    <id>https://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python</id>
     <content type="html"><![CDATA[<p>For some time I have been using <a href="http://lucene.apache.org/solr/">Apache Solr</a> for fast querying and faceting.<br/>
 Once I needed to take the dump of whole data from solr. So I implemented a function which works as python generator and gives you the dump of data from your solr collection.<br/>
 Below is the function.</p>
@@ -170,9 +170,9 @@ Below is the function.</p>
   
   <entry>
     <title type="html"><![CDATA[Apache2 installation and enabling CGI on Ubuntu-12.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
     <updated>2014-07-02T17:10:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
+    <id>https://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
     <content type="html"><![CDATA[<p>Recently I required to use Python for dynamic web pages. So I was required to install Apache web server and enabling the Cgi in it.
 So here I am gonna explain the whole process.</p>
 
@@ -222,9 +222,9 @@ So here I am gonna explain the whole process.</p>
   
   <entry>
     <title type="html"><![CDATA[Sorting a CSV file using Python]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python/"/>
     <updated>2013-07-26T18:16:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python</id>
     <content type="html"><![CDATA[<p>Today ,just got the the task to sort a CSV file. I tried it using Python and completed the task.<br/>
 So here is my python script.</p>
 
@@ -242,9 +242,9 @@ So here is my python script.</p>
   
   <entry>
     <title type="html"><![CDATA[Removing Special Characters &amp; Populating Database using Python]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python/"/>
     <updated>2013-07-05T21:59:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python</id>
     <content type="html"><![CDATA[<table>
 <th>State Name</th>
 <th>Village Name</th>

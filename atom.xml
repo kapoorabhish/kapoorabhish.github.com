@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Analytics For Bussiness Transformation]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2019/06/23/analytics-for-bussiness-transformation/"/>
+    <link href="https://kapoorabhish.github.io/blog/2019/06/23/analytics-for-bussiness-transformation/"/>
     <updated>2019-06-23T22:38:13+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2019/06/23/analytics-for-bussiness-transformation</id>
-    <content type="html"><![CDATA[<p><img class="center {{ root_url }}" src="http://kapoorabhish.github.io/images/analytic_for_business_transformation_session3.jpg"">
+    <id>https://kapoorabhish.github.io/blog/2019/06/23/analytics-for-bussiness-transformation</id>
+    <content type="html"><![CDATA[<p><img class="center {{ root_url }}" src="https://kapoorabhish.github.io/images/analytic_for_business_transformation_session3.jpg"">
 On 18th June 2019, I spoke at a session on the topic <a href="http://icpi.in/analytics-for-business-transformation/" target="_blank">&ldquo;Analytics For Bussiness Transformation&rdquo;</a> along with <a href="https://www.linkedin.com/in/deepak-kumar-27a80525/" target="_blank">Deepak Kumar</a>.<br/>
 The event was organised by <a href="http://icpi.in/" target="_blank">International Consulting Professionals’ Institute (ICPI)</a> in collaboration with <a href="https://dmadelhi.org/" target="_blank">Delhi Management Association (DMA)</a> and <a href="https://www.nationalhrd.org/" target="_blank">NHRD.</a></p>
 
@@ -30,9 +30,9 @@ The event was organised by <a href="http://icpi.in/" target="_blank">Internation
   
   <entry>
     <title type="html"><![CDATA[Introduction to Python Decorators]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators/"/>
+    <link href="https://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators/"/>
     <updated>2016-08-17T21:29:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators</id>
+    <id>https://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators</id>
     <content type="html"><![CDATA[<p>Here is the presentation which I created recently on Python Decorators.</p>
 
 <script async="true" class="speakerdeck-embed" data-id="2bc365ea5d8e4526a5391d9633dbc904" src="//speakerdeck.com/assets/embed.js"> </script>
@@ -52,9 +52,9 @@ The event was organised by <a href="http://icpi.in/" target="_blank">Internation
   
   <entry>
     <title type="html"><![CDATA[ConceptNet5 Data download using Torrent]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent/"/>
+    <link href="https://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent/"/>
     <updated>2016-05-22T17:09:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent</id>
+    <id>https://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent</id>
     <content type="html"><![CDATA[<h3><strong>ConceptNet</strong></h3>
 
 <p><a href='http://conceptnet5.media.mit.edu/' target="_blank">ConceptNet</a> is a semantic network containing lots of things computers should know about the world, especially when understanding text written by people.<br/>
@@ -83,9 +83,9 @@ Below are the links of torrents for each file.</p>
   
   <entry>
     <title type="html"><![CDATA[Apache Solr Cursor in Python]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python/"/>
+    <link href="https://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python/"/>
     <updated>2016-03-18T21:40:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python</id>
+    <id>https://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python</id>
     <content type="html"><![CDATA[<p>For some time I have been using <a href="http://lucene.apache.org/solr/">Apache Solr</a> for fast querying and faceting.<br/>
 Once I needed to take the dump of whole data from solr. So I implemented a function which works as python generator and gives you the dump of data from your solr collection.<br/>
 Below is the function.</p>
@@ -217,9 +217,9 @@ Below is the function.</p>
   
   <entry>
     <title type="html"><![CDATA[Playing with Date in Pentaho Spoon]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon/"/>
     <updated>2014-09-27T19:10:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon</id>
+    <id>https://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon</id>
     <content type="html"><![CDATA[<p>I got the date in which there was a date field in form <strong>dd/mm/yy</strong> and I needed to convert into the format of <strong>dd/mm/yyyy</strong>.<br/>
 Oops!!! How to specify the year 2000 in the date, coz in the date format meta data i can change format to dd/mm/yyyy but can&rsquo;t specify the year number.<br/>
 Then, something hit into my mind and I specified the format as <strong>dd/mm/20yy</strong> and Bingo!!!</p>
@@ -230,9 +230,9 @@ Then, something hit into my mind and I specified the format as <strong>dd/mm/20y
   
   <entry>
     <title type="html"><![CDATA[Pentaho Spoon Cassandra connection error]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error/"/>
     <updated>2014-09-27T18:35:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error</id>
+    <id>https://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error</id>
     <content type="html"><![CDATA[<p>While doing ETL process using spoon I got the error like this.</p>
 
 <pre><code>    An unexpected error occurred in Spoon:  
@@ -282,9 +282,9 @@ And here is the solution provided by them.</p>
   
   <entry>
     <title type="html"><![CDATA[Google Chrome on Ubuntu-12.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/07/26/google-chrome-on-ubuntu-12-dot-04/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/07/26/google-chrome-on-ubuntu-12-dot-04/"/>
     <updated>2014-07-26T19:56:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/07/26/google-chrome-on-ubuntu-12-dot-04</id>
+    <id>https://kapoorabhish.github.io/blog/2014/07/26/google-chrome-on-ubuntu-12-dot-04</id>
     <content type="html"><![CDATA[<p>On linux(Ubuntu) you can install Chromium browser using apt-get, but to install <strong>Chrome</strong> you need to run some commands to make it install using apt-get.<br>
 First, get a repository key and add it to your system.</p>
 
@@ -316,9 +316,9 @@ First, get a repository key and add it to your system.</p>
   
   <entry>
     <title type="html"><![CDATA[Reliance Net Connect on Ubuntu-12.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu/"/>
     <updated>2014-07-07T21:29:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu</id>
+    <id>https://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu</id>
     <content type="html"><![CDATA[<p>After surfing so many posts on Internet about installing and running Reliance Net Connect on Ubuntu, finally I was successful.
 I have HUAWEI (model no. HUAWEI EC1262).</p>
 
@@ -385,7 +385,7 @@ I have HUAWEI (model no. HUAWEI EC1262).</p>
 
 
 <p>I hope your connection will be successful, and the output will be like this.
-<img class="center {{ root_url }}" src="http://kapoorabhish.github.io/images/terminal.png""></p>
+<img class="center {{ root_url }}" src="https://kapoorabhish.github.io/images/terminal.png""></p>
 
 <p>Note: Keep the terminal window open till you want to use internet. When you want to close connection, press <b>ctrl+c</b>.</p>
 
@@ -395,9 +395,9 @@ I have HUAWEI (model no. HUAWEI EC1262).</p>
   
   <entry>
     <title type="html"><![CDATA[Apache2 installation and enabling CGI on Ubuntu-12.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
     <updated>2014-07-02T17:10:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
+    <id>https://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
     <content type="html"><![CDATA[<p>Recently I required to use Python for dynamic web pages. So I was required to install Apache web server and enabling the Cgi in it.
 So here I am gonna explain the whole process.</p>
 
@@ -471,9 +471,9 @@ So here I am gonna explain the whole process.</p>
   
   <entry>
     <title type="html"><![CDATA[Javascript to match two Fields]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/05/29/javascript-to-match-to-fields/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/05/29/javascript-to-match-to-fields/"/>
     <updated>2014-05-29T12:42:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/05/29/javascript-to-match-to-fields</id>
+    <id>https://kapoorabhish.github.io/blog/2014/05/29/javascript-to-match-to-fields</id>
     <content type="html"><![CDATA[<script type="text/javascript">
 function checkEmail() {
 var mail1=document.getElementById('email1');
@@ -592,9 +592,9 @@ Enter your email again &nbsp;<input type="email" id="email2" onblur="checkEmail(
   
   <entry>
     <title type="html"><![CDATA[Reliance Net Connect on Lubuntu]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu/"/>
     <updated>2014-05-27T22:32:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu</id>
+    <id>https://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu</id>
     <content type="html"><![CDATA[<p>I just got a Reliance Net Connect from one of my friend and tried it to run on Lubuntu. The task was so easy. It took me to run just few commands.</p>
 
 <p>You need to install two software packages to make the internet connectivity work. They are wvdial and gnome-ppp (The front-end tool to configure wvdial).</p>
@@ -634,9 +634,9 @@ Enter your email again &nbsp;<input type="email" id="email2" onblur="checkEmail(
   
   <entry>
     <title type="html"><![CDATA[Format specifiers in C]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c/"/>
     <updated>2014-05-21T13:03:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c</id>
+    <id>https://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c</id>
     <content type="html"><![CDATA[<p>Here, I am gonna tabulate the format specifiers used in C language.</p>
 
 <table >
@@ -814,9 +814,9 @@ Long Double floating point number.
   
   <entry>
     <title type="html"><![CDATA[Gotta problem with WI-FI on Lubuntu-10.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04/"/>
     <updated>2014-05-08T21:04:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04</id>
+    <id>https://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04</id>
     <content type="html"><![CDATA[<p>I work on Lubuntu-10.04. Accidentally I removed the desktop panel two days back. In short I lost all the icons on the panel.<br>
 I added all the icons back (which I possibly could!).
 One big problem I faced is ,I was helpless, &ldquo;How to turn on the WI-FI, since I could not find the icon for it.&rdquo;
@@ -901,9 +901,9 @@ So, go to desktop panel settings and add &ldquo;Manage Networks&rdquo; plugin.</
   
   <entry>
     <title type="html"><![CDATA[Sorting a CSV file using Python]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python/"/>
     <updated>2013-07-26T18:16:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/26/sorting-a-csv-file-using-python</id>
     <content type="html"><![CDATA[<p>Today ,just got the the task to sort a CSV file. I tried it using Python and completed the task.<br/>
 So here is my python script.</p>
 
@@ -930,9 +930,9 @@ So here is my python script.</p>
   
   <entry>
     <title type="html"><![CDATA[Increasing Upload Size of PHPMyAdmin]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/24/increasing-upload-size-of-phpmyadmin/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/24/increasing-upload-size-of-phpmyadmin/"/>
     <updated>2013-07-24T13:32:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/24/increasing-upload-size-of-phpmyadmin</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/24/increasing-upload-size-of-phpmyadmin</id>
     <content type="html"><![CDATA[<p>Increasing file upload size of PHPMyAdmin is a very easy task.<br/>
 Just open the file /etc/php5/apache2/php.ini</p>
 
@@ -964,9 +964,9 @@ Just open the file /etc/php5/apache2/php.ini</p>
   
   <entry>
     <title type="html"><![CDATA[pdf support for Chromium]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium/"/>
     <updated>2013-07-12T22:12:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium</id>
     <content type="html"><![CDATA[<p>I didn&rsquo;t have pdf format support in my Chromium Browser. So I tried the following commands for it.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -1005,9 +1005,9 @@ Just open the file /etc/php5/apache2/php.ini</p>
   
   <entry>
     <title type="html"><![CDATA[Removing LAMP]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/12/removing-lamp/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/12/removing-lamp/"/>
     <updated>2013-07-12T22:05:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/12/removing-lamp</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/12/removing-lamp</id>
     <content type="html"><![CDATA[<p>To remove the LAMP stack you may try the following commands.</p>
 
 <figure class='code'><figcaption><span>Remove LAMP  </span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -1025,9 +1025,9 @@ Just open the file /etc/php5/apache2/php.ini</p>
   
   <entry>
     <title type="html"><![CDATA[Installing Adobe Reader on Linux]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux/"/>
     <updated>2013-07-12T14:52:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/12/installing-adobe-reader-on-linux</id>
     <content type="html"><![CDATA[<p>For installing Adobe Reader on Linux OS try the folowing commands.</p>
 
 <figure class='code'><figcaption><span>Install Adobe Reader</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -1045,9 +1045,9 @@ Just open the file /etc/php5/apache2/php.ini</p>
   
   <entry>
     <title type="html"><![CDATA[Failed to load libGL.so in android]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/11/failed-to-load-libgl-dot-so-in-android/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/11/failed-to-load-libgl-dot-so-in-android/"/>
     <updated>2013-07-11T16:27:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/11/failed-to-load-libgl-dot-so-in-android</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/11/failed-to-load-libgl-dot-so-in-android</id>
     <content type="html"><![CDATA[<p>Getting error while launchin AVD!!</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -1070,9 +1070,9 @@ Just open the file /etc/php5/apache2/php.ini</p>
   
   <entry>
     <title type="html"><![CDATA[Installing phpMyAdmin]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/08/installing-phpmyadmin/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/08/installing-phpmyadmin/"/>
     <updated>2013-07-08T22:29:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/08/installing-phpmyadmin</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/08/installing-phpmyadmin</id>
     <content type="html"><![CDATA[<p>Here I am going to post some steps in order to install phpMyAdmin.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: conceptnet torrents | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/conceptnet-torrents/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/conceptnet-torrents/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[ConceptNet5 Data download using Torrent]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent/"/>
+    <link href="https://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent/"/>
     <updated>2016-05-22T17:09:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent</id>
+    <id>https://kapoorabhish.github.io/blog/2016/05/22/conceptnet5-data-download-using-torrent</id>
     <content type="html"><![CDATA[<h3><strong>ConceptNet</strong></h3>
 
 <p><a href='http://conceptnet5.media.mit.edu/' target="_blank">ConceptNet</a> is a semantic network containing lots of things computers should know about the world, especially when understanding text written by people.<br/>

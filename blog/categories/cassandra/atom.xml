@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: cassandra | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/cassandra/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/cassandra/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Pentaho Spoon Cassandra connection error]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error/"/>
     <updated>2014-09-27T18:35:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error</id>
+    <id>https://kapoorabhish.github.io/blog/2014/09/27/pentaho-spoon-cassandra-connection-error</id>
     <content type="html"><![CDATA[<p>While doing ETL process using spoon I got the error like this.</p>
 
 <pre><code>    An unexpected error occurred in Spoon:  

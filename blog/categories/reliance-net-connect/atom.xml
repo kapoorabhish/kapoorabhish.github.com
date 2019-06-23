@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: reliance-net-connect | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/reliance-net-connect/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/reliance-net-connect/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Reliance Net Connect on Ubuntu-12.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu/"/>
     <updated>2014-07-07T21:29:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu</id>
+    <id>https://kapoorabhish.github.io/blog/2014/07/07/reliance-net-connect-on-ubuntu</id>
     <content type="html"><![CDATA[<p>After surfing so many posts on Internet about installing and running Reliance Net Connect on Ubuntu, finally I was successful.
 I have HUAWEI (model no. HUAWEI EC1262).</p>
 
@@ -69,9 +69,9 @@ At last, open up the terminal give the following command
   
   <entry>
     <title type="html"><![CDATA[Reliance Net Connect on Lubuntu]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu/"/>
     <updated>2014-05-27T22:32:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu</id>
+    <id>https://kapoorabhish.github.io/blog/2014/05/27/reliance-net-connect-on-ubuntu-slash-lubuntu</id>
     <content type="html"><![CDATA[<p>I just got a Reliance Net Connect from one of my friend and tried it to run on Lubuntu. The task was so easy. It took me to run just few commands.</p>
 
 <p>You need to install two software packages to make the internet connectivity work. They are wvdial and gnome-ppp (The front-end tool to configure wvdial).</p>

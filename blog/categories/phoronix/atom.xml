@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: phoronix | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/phoronix/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/phoronix/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Phoronix Test Suite]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/06/20/phoronix-test-suite/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/06/20/phoronix-test-suite/"/>
     <updated>2013-06-20T13:02:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/06/20/phoronix-test-suite</id>
+    <id>https://kapoorabhish.github.io/blog/2013/06/20/phoronix-test-suite</id>
     <content type="html"><![CDATA[<p>I got a task to test a server which we made and named it <b>Ant</b>.It has <b>Centos 6</b> installed on it.<br/>
 As suggested I made use of <b>Phoronix Test Suite</b>.<br/>
 So here I am posting how to install it on Centos.</p>

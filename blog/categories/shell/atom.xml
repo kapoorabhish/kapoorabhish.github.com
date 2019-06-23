@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: shell | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/shell/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/shell/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Accesing text file using Shell Script.]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/06/14/accesing-csv-file-using-shell-script/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/06/14/accesing-csv-file-using-shell-script/"/>
     <updated>2013-06-14T08:19:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/06/14/accesing-csv-file-using-shell-script</id>
+    <id>https://kapoorabhish.github.io/blog/2013/06/14/accesing-csv-file-using-shell-script</id>
     <content type="html"><![CDATA[<p>Given a text file in which there are links of file to be dowloaded (one link per line), here I am posting a shell script to achieve the task.</p>
 
 <p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

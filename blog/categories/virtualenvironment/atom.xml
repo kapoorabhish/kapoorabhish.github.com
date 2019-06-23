@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: virtualenvironment | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/virtualenvironment/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/virtualenvironment/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Setting Virtual Environment in Linux]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/06/11/virtual-env/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/06/11/virtual-env/"/>
     <updated>2013-06-11T13:25:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/06/11/virtual-env</id>
+    <id>https://kapoorabhish.github.io/blog/2013/06/11/virtual-env</id>
     <content type="html"><![CDATA[<p>To set up a Virtual Environment, you first need to install <b>&ldquo;virtualenvwrapper&rdquo;</b>.<br/>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ pip install virtualenvwrapper</span></code></pre></td></tr></table></div></figure>

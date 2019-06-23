@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: date | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/date/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/date/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Playing with Date in Pentaho Spoon]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon/"/>
     <updated>2014-09-27T19:10:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon</id>
+    <id>https://kapoorabhish.github.io/blog/2014/09/27/playing-with-date-in-pentaho-spoon</id>
     <content type="html"><![CDATA[<p>I got the date in which there was a date field in form <strong>dd/mm/yy</strong> and I needed to convert into the format of <strong>dd/mm/yyyy</strong>.<br/>
 Oops!!! How to specify the year 2000 in the date, coz in the date format meta data i can change format to dd/mm/yyyy but can&rsquo;t specify the year number.<br/>
 Then, something hit into my mind and I specified the format as <strong>dd/mm/20yy</strong> and Bingo!!!</p>

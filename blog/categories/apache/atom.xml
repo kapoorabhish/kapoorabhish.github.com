@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: apache | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/apache/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/apache/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Apache Solr Cursor in Python]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python/"/>
+    <link href="https://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python/"/>
     <updated>2016-03-18T21:40:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python</id>
+    <id>https://kapoorabhish.github.io/blog/2016/03/18/apache-solr-cursor-using-python</id>
     <content type="html"><![CDATA[<p>For some time I have been using <a href="http://lucene.apache.org/solr/">Apache Solr</a> for fast querying and faceting.<br/>
 Once I needed to take the dump of whole data from solr. So I implemented a function which works as python generator and gives you the dump of data from your solr collection.<br/>
 Below is the function.</p>

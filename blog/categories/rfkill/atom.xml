@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: rfkill | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/rfkill/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/rfkill/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Gotta problem with WI-FI on Lubuntu-10.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04/"/>
     <updated>2014-05-08T21:04:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04</id>
+    <id>https://kapoorabhish.github.io/blog/2014/05/08/gotta-problem-with-wi-fi-on-lubuntu-10-dot-04</id>
     <content type="html"><![CDATA[<p>I work on Lubuntu-10.04. Accidentally I removed the desktop panel two days back. In short I lost all the icons on the panel.<br>
 I added all the icons back (which I possibly could!).
 One big problem I faced is ,I was helpless, &ldquo;How to turn on the WI-FI, since I could not find the icon for it.&rdquo;

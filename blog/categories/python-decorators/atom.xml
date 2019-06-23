@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: python decorators | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/python-decorators/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/python-decorators/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Introduction to Python Decorators]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators/"/>
+    <link href="https://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators/"/>
     <updated>2016-08-17T21:29:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators</id>
+    <id>https://kapoorabhish.github.io/blog/2016/08/17/introduction-to-python-decorators</id>
     <content type="html"><![CDATA[<p>Here is the presentation which I created recently on Python Decorators.
 <script async="true" class="speakerdeck-embed" data-id="2bc365ea5d8e4526a5391d9633dbc904" src="//speakerdeck.com/assets/embed.js"> </script></p>
 

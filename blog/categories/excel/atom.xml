@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: excel | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/excel/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/excel/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Removing Special Characters &amp; Populating Database using Python]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python/"/>
     <updated>2013-07-05T21:59:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/05/removing-special-characters-and-populating-database-using-python</id>
     <content type="html"><![CDATA[<table>
 <th>State Name</th>
 <th>Village Name</th>
@@ -98,9 +98,9 @@ Here I am posting a Python script to complete the task.</p>
   
   <entry>
     <title type="html"><![CDATA[Populating Database using Python Script]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/06/26/populating-database-using-python-script/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/06/26/populating-database-using-python-script/"/>
     <updated>2013-06-26T21:42:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/06/26/populating-database-using-python-script</id>
+    <id>https://kapoorabhish.github.io/blog/2013/06/26/populating-database-using-python-script</id>
     <content type="html"><![CDATA[<p>I am having an excel file which contains near about 11000 rows,from which I needed to populate my database, so I tried the following Python Script.</p>
 
 <pre><code class="ruby populate.py">    import xlrd

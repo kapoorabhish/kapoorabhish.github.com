@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: pdf | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/pdf/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/pdf/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[pdf support for Chromium]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium/"/>
+    <link href="https://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium/"/>
     <updated>2013-07-12T22:12:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium</id>
+    <id>https://kapoorabhish.github.io/blog/2013/07/12/pdf-support-for-chromium</id>
     <content type="html"><![CDATA[<p>I didn&rsquo;t have pdf format support in my Chromium Browser. So I tried the following commands for it. <br/>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

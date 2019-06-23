@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: format-specifier | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/format-specifier/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/format-specifier/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Format specifiers in C]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c/"/>
     <updated>2014-05-21T13:03:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c</id>
+    <id>https://kapoorabhish.github.io/blog/2014/05/21/format-specifiers-in-c</id>
     <content type="html"><![CDATA[<p>Here, I am gonna tabulate the format specifiers used in C language.</p>
 
 <table >

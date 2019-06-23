@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: cgi | Abhish's Blog]]></title>
-  <link href="http://kapoorabhish.github.io/blog/categories/cgi/atom.xml" rel="self"/>
-  <link href="http://kapoorabhish.github.io/"/>
-  <updated>2019-06-24T00:06:39+05:30</updated>
-  <id>http://kapoorabhish.github.io/</id>
+  <link href="https://kapoorabhish.github.io/blog/categories/cgi/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T00:48:29+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
   <author>
     <name><![CDATA[Abhishek Kapoor]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Apache2 installation and enabling CGI on Ubuntu-12.04]]></title>
-    <link href="http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
+    <link href="https://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi/"/>
     <updated>2014-07-02T17:10:00+05:30</updated>
-    <id>http://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
+    <id>https://kapoorabhish.github.io/blog/2014/07/02/apache2-installation-and-enabling-cgi</id>
     <content type="html"><![CDATA[<p>Recently I required to use Python for dynamic web pages. So I was required to install Apache web server and enabling the Cgi in it.
 So here I am gonna explain the whole process.</p>
 
