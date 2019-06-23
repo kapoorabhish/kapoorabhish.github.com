@@ -12,4 +12,5 @@ Software Engineer at <a href="http://juxt-smartmandate.com/">Juxt Smart Mandate<
 M.Sc.Informatics  
 Instititue of Informatics & Communication, UDSC  
 e-mail: abhishek [dot] kapoor [at] outlook [dot] com  
-LinkedIn: <a href='http://in.linkedin.com/pub/abhishek-kapoor/95/b92/4b7/' target='_blank'>in.linkedin.com/pub/abhishek-kapoor/95/b92/4b7/</a>
+LinkedIn: <a href='http://in.linkedin.com/pub/abhishek-kapoor/95/b92/4b7/' target='_blank'>in.linkedin.com/pub/abhishek-kapoor/95/b92/4b7/</a>  
+Github: <a href="https://github.com/kapoorabhish" target="_blank">https://github.com/kapoorabhish</a>  
