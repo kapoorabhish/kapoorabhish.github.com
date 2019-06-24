@@ -11,6 +11,9 @@ The event was organised by <a href="http://icpi.in/" target="_blank">Internation
 
 Below is the presentation for of the session.  
 
-<iframe src="http://docs.google.com/gview?
+<object data="{{ root_url }}/pdfs/ICPI_DMA_Session_Presentation_Analytics_for_Business_Transformation.pdf" width="900" height="400" type='application/pdf'/>  
+
+<!-- <iframe src="http://docs.google.com/gview?
 url=https://github.com/kapoorabhish/kapoorabhish.github.com/blob/master/pdfs/ICPI_DMA_Session_Presentation_Analytics_for_Business_Transformation.pdf?raw=true&embedded=true" 
 style="width:900px; height:450px;margin : 0 auto; display : block;" frameborder="0"></iframe>
+ -->
