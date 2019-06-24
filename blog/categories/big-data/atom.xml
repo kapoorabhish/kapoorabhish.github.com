@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: big data | Abhish's Blog]]></title>
+  <link href="https://kapoorabhish.github.io/blog/categories/big-data/atom.xml" rel="self"/>
+  <link href="https://kapoorabhish.github.io/"/>
+  <updated>2019-06-24T09:34:56+05:30</updated>
+  <id>https://kapoorabhish.github.io/</id>
+  <author>
+    <name><![CDATA[Abhishek Kapoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Analytics For Bussiness Transformation]]></title>
+    <link href="https://kapoorabhish.github.io/blog/2019/06/23/analytics-for-bussiness-transformation/"/>
+    <updated>2019-06-23T22:38:13+05:30</updated>
+    <id>https://kapoorabhish.github.io/blog/2019/06/23/analytics-for-bussiness-transformation</id>
+    <content type="html"><![CDATA[<p><img class="center &ldquo;{{ root_url }}" src="/images/analytic_for_business_transformation_session3.jpg&rdquo;">
+On 18th June 2019, I spoke at a session on the topic <a href="http://icpi.in/analytics-for-business-transformation/" target="_blank">&ldquo;Analytics For Bussiness Transformation&rdquo;</a> along with <a href="https://www.linkedin.com/in/deepak-kumar-27a80525/" target="_blank">Deepak Kumar</a>.<br/>
+The event was organised by <a href="http://icpi.in/" target="_blank">International Consulting Professionals’ Institute (ICPI)</a> in collaboration with <a href="https://dmadelhi.org/" target="_blank">Delhi Management Association (DMA)</a> and <a href="https://www.nationalhrd.org/" target="_blank">NHRD.</a></p>
+
+<p>Below is the presentation for of the session.</p>
+
+<iframe src="http://docs.google.com/gview?
+url=https://github.com/kapoorabhish/kapoorabhish.github.com/blob/master/pdfs/ICPI_DMA_Session_Presentation_Analytics_for_Business_Transformation.pdf?raw=true&embedded=true" 
+style="width:900px; height:450px;margin : 0 auto; display : block;" frameborder="0"></iframe>
+
+]]></content>
+  </entry>
+  
+</feed>
